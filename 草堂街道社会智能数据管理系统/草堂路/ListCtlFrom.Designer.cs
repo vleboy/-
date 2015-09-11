@@ -231,9 +231,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laUnitValue.Location = new System.Drawing.Point(901, 319);
             this.laUnitValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laUnitValue.Name = "laUnitValue";
-            this.laUnitValue.Size = new System.Drawing.Size(56, 25);
+            this.laUnitValue.Size = new System.Drawing.Size(45, 25);
             this.laUnitValue.TabIndex = 96;
-            this.laUnitValue.Text = "0000";
+            this.laUnitValue.Text = "321";
             // 
             // laUnemploymentValue
             // 
@@ -288,7 +288,7 @@ namespace 草堂街道社会智能数据管理系统
             this.laHouseValue.Name = "laHouseValue";
             this.laHouseValue.Size = new System.Drawing.Size(45, 25);
             this.laHouseValue.TabIndex = 91;
-            this.laHouseValue.Text = "000";
+            this.laHouseValue.Text = "140";
             // 
             // laDopeTitle
             // 

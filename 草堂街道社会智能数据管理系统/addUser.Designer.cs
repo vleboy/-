@@ -37,22 +37,22 @@ namespace 草堂街道社会智能数据管理系统
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cb_district = new System.Windows.Forms.ComboBox();
+            this.cb_grid = new System.Windows.Forms.ComboBox();
+            this.cb_block = new System.Windows.Forms.ComboBox();
+            this.tb_names = new System.Windows.Forms.TextBox();
+            this.ryinfo_card_id = new System.Windows.Forms.TextBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.ryxx_p3 = new System.Windows.Forms.TextBox();
+            this.ryxx_p2 = new System.Windows.Forms.TextBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.ryinfo_age = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.ryxx_p1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -61,101 +61,101 @@ namespace 草堂街道社会智能数据管理系统
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.la_mz = new System.Windows.Forms.Label();
+            this.tb_mz = new System.Windows.Forms.TextBox();
+            this.la_jlsj = new System.Windows.Forms.Label();
+            this.cb_photo = new System.Windows.Forms.CheckBox();
+            this.cb_zk = new System.Windows.Forms.CheckBox();
+            this.la_qfrq = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.tb_xjdz = new System.Windows.Forms.TextBox();
+            this.la_xjdz = new System.Windows.Forms.Label();
+            this.tb_yhzgx = new System.Windows.Forms.TextBox();
+            this.la_yhzgx = new System.Windows.Forms.Label();
+            this.cb_hz = new System.Windows.Forms.ComboBox();
+            this.la_hz = new System.Windows.Forms.Label();
+            this.dtp_qfrq = new System.Windows.Forms.DateTimePicker();
+            this.dtp_jlsj = new System.Windows.Forms.DateTimePicker();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.tb_gx = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.tb_jkr = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.tb_dj = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tb_hmz = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.tb_cjz = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.cb_feature = new System.Windows.Forms.ComboBox();
+            this.cb_handicapped = new System.Windows.Forms.CheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.jwry_czjwr_cb = new System.Windows.Forms.CheckBox();
+            this.jwry_lxrdh_tb = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.jwry_lxr_tb = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.jwry_jdr_tb = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.jwry_f_cb = new System.Windows.Forms.ComboBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.jwry_lksj_dtp = new System.Windows.Forms.DateTimePicker();
             this.label28 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.jyry_qzyxq_dtp = new System.Windows.Forms.DateTimePicker();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.jwry_qzlx_tb = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.jwry_zjhm_tb = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.jwry_gj_tb = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.cb_jwry = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.dbry_id_tb = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.cb_dbry = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
+            this.jzry_jzqe_dtp = new System.Windows.Forms.DateTimePicker();
             this.label44 = new System.Windows.Forms.Label();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.label43 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.jzry_jzqs_dtp = new System.Windows.Forms.DateTimePicker();
+            this.jzry_jzqs = new System.Windows.Forms.Label();
+            this.jzry_jxjy_tb = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.jzry_jzlb_tb = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.jzry_ypxq = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.jzry_fzlx_tb = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.jzry_zm_tb = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.cb_jzry = new System.Windows.Forms.CheckBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
+            this.xmsfry_sfsj_dtp = new System.Windows.Forms.DateTimePicker();
             this.label40 = new System.Windows.Forms.Label();
-            this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
+            this.xmsfry_zxqz_dtp = new System.Windows.Forms.DateTimePicker();
             this.label45 = new System.Windows.Forms.Label();
-            this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.xmsfry_zxqq_dtp = new System.Windows.Forms.DateTimePicker();
+            this.xmsfry_fxjyhdq_tb = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.xmsfry_zm_tb = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.cb_xfsfry = new System.Windows.Forms.CheckBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.xdry_ryxz_tb = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
-            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.xdry_dplb_tb = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
+            this.xdry_ccfxrq_dtp = new System.Windows.Forms.DateTimePicker();
             this.label47 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.xdry_hjpcs_tb = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cb_xdry = new System.Windows.Forms.CheckBox();
+            this.save = new System.Windows.Forms.Button();
+            this.close = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ryinfo_age)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -219,43 +219,43 @@ namespace 草堂街道社会智能数据管理系统
             this.label11.TabIndex = 23;
             this.label11.Text = "所属院落";
             // 
-            // comboBox1
+            // cb_district
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(85, 90);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
-            this.comboBox1.TabIndex = 24;
+            this.cb_district.FormattingEnabled = true;
+            this.cb_district.Location = new System.Drawing.Point(85, 90);
+            this.cb_district.Name = "cb_district";
+            this.cb_district.Size = new System.Drawing.Size(121, 20);
+            this.cb_district.TabIndex = 24;
             // 
-            // comboBox2
+            // cb_grid
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(323, 86);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 20);
-            this.comboBox2.TabIndex = 25;
+            this.cb_grid.FormattingEnabled = true;
+            this.cb_grid.Location = new System.Drawing.Point(323, 86);
+            this.cb_grid.Name = "cb_grid";
+            this.cb_grid.Size = new System.Drawing.Size(121, 20);
+            this.cb_grid.TabIndex = 25;
             // 
-            // comboBox3
+            // cb_block
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(720, 86);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 20);
-            this.comboBox3.TabIndex = 26;
+            this.cb_block.FormattingEnabled = true;
+            this.cb_block.Location = new System.Drawing.Point(720, 86);
+            this.cb_block.Name = "cb_block";
+            this.cb_block.Size = new System.Drawing.Size(121, 20);
+            this.cb_block.TabIndex = 26;
             // 
-            // textBox1
+            // tb_names
             // 
-            this.textBox1.Location = new System.Drawing.Point(85, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 27;
+            this.tb_names.Location = new System.Drawing.Point(85, 18);
+            this.tb_names.Name = "tb_names";
+            this.tb_names.Size = new System.Drawing.Size(100, 21);
+            this.tb_names.TabIndex = 27;
             // 
-            // textBox2
+            // ryinfo_card_id
             // 
-            this.textBox2.Location = new System.Drawing.Point(85, 125);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(234, 21);
-            this.textBox2.TabIndex = 28;
+            this.ryinfo_card_id.Location = new System.Drawing.Point(85, 125);
+            this.ryinfo_card_id.Name = "ryinfo_card_id";
+            this.ryinfo_card_id.Size = new System.Drawing.Size(234, 21);
+            this.ryinfo_card_id.TabIndex = 28;
             // 
             // comboBox4
             // 
@@ -288,13 +288,13 @@ namespace 草堂街道社会智能数据管理系统
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox19);
-            this.groupBox1.Controls.Add(this.textBox18);
+            this.groupBox1.Controls.Add(this.ryxx_p3);
+            this.groupBox1.Controls.Add(this.ryxx_p2);
             this.groupBox1.Controls.Add(this.checkBox5);
             this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.ryinfo_age);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.ryxx_p1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.textBox6);
             this.groupBox1.Controls.Add(this.label7);
@@ -305,11 +305,11 @@ namespace 草堂街道社会智能数据管理系统
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.comboBox4);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.ryinfo_card_id);
+            this.groupBox1.Controls.Add(this.tb_names);
+            this.groupBox1.Controls.Add(this.cb_block);
+            this.groupBox1.Controls.Add(this.cb_grid);
+            this.groupBox1.Controls.Add(this.cb_district);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
@@ -323,19 +323,19 @@ namespace 草堂街道社会智能数据管理系统
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "人员信息";
             // 
-            // textBox19
+            // ryxx_p3
             // 
-            this.textBox19.Location = new System.Drawing.Point(512, 18);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(97, 21);
-            this.textBox19.TabIndex = 55;
+            this.ryxx_p3.Location = new System.Drawing.Point(512, 18);
+            this.ryxx_p3.Name = "ryxx_p3";
+            this.ryxx_p3.Size = new System.Drawing.Size(97, 21);
+            this.ryxx_p3.TabIndex = 55;
             // 
-            // textBox18
+            // ryxx_p2
             // 
-            this.textBox18.Location = new System.Drawing.Point(403, 18);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(97, 21);
-            this.textBox18.TabIndex = 54;
+            this.ryxx_p2.Location = new System.Drawing.Point(403, 18);
+            this.ryxx_p2.Name = "ryxx_p2";
+            this.ryxx_p2.Size = new System.Drawing.Size(97, 21);
+            this.ryxx_p2.TabIndex = 54;
             // 
             // checkBox5
             // 
@@ -359,12 +359,12 @@ namespace 草堂街道社会智能数据管理系统
             this.checkBox4.Text = "老年人";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown1
+            // ryinfo_age
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(271, 54);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(44, 21);
-            this.numericUpDown1.TabIndex = 44;
+            this.ryinfo_age.Location = new System.Drawing.Point(271, 54);
+            this.ryinfo_age.Name = "ryinfo_age";
+            this.ryinfo_age.Size = new System.Drawing.Size(44, 21);
+            this.ryinfo_age.TabIndex = 44;
             // 
             // label14
             // 
@@ -375,12 +375,12 @@ namespace 草堂街道社会智能数据管理系统
             this.label14.TabIndex = 43;
             this.label14.Text = "年龄";
             // 
-            // textBox7
+            // ryxx_p1
             // 
-            this.textBox7.Location = new System.Drawing.Point(295, 18);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(97, 21);
-            this.textBox7.TabIndex = 39;
+            this.ryxx_p1.Location = new System.Drawing.Point(295, 18);
+            this.ryxx_p1.Name = "ryxx_p1";
+            this.ryxx_p1.Size = new System.Drawing.Size(97, 21);
+            this.ryxx_p1.TabIndex = 39;
             // 
             // label8
             // 
@@ -448,79 +448,79 @@ namespace 草堂街道社会智能数据管理系统
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // label12
+            // la_mz
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 52);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(29, 12);
-            this.label12.TabIndex = 40;
-            this.label12.Text = "民族";
+            this.la_mz.AutoSize = true;
+            this.la_mz.Location = new System.Drawing.Point(6, 52);
+            this.la_mz.Name = "la_mz";
+            this.la_mz.Size = new System.Drawing.Size(29, 12);
+            this.la_mz.TabIndex = 40;
+            this.la_mz.Text = "民族";
             // 
-            // textBox8
+            // tb_mz
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(41, 49);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 21);
-            this.textBox8.TabIndex = 40;
+            this.tb_mz.Enabled = false;
+            this.tb_mz.Location = new System.Drawing.Point(41, 49);
+            this.tb_mz.Name = "tb_mz";
+            this.tb_mz.Size = new System.Drawing.Size(100, 21);
+            this.tb_mz.TabIndex = 40;
             // 
-            // label13
+            // la_jlsj
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(153, 52);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(53, 12);
-            this.label13.TabIndex = 41;
-            this.label13.Text = "记录日期";
+            this.la_jlsj.AutoSize = true;
+            this.la_jlsj.Location = new System.Drawing.Point(153, 52);
+            this.la_jlsj.Name = "la_jlsj";
+            this.la_jlsj.Size = new System.Drawing.Size(53, 12);
+            this.la_jlsj.TabIndex = 41;
+            this.la_jlsj.Text = "记录日期";
             // 
-            // checkBox2
+            // cb_photo
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Enabled = false;
-            this.checkBox2.Location = new System.Drawing.Point(85, 21);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(48, 16);
-            this.checkBox2.TabIndex = 42;
-            this.checkBox2.Text = "照片";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cb_photo.AutoSize = true;
+            this.cb_photo.Enabled = false;
+            this.cb_photo.Location = new System.Drawing.Point(85, 21);
+            this.cb_photo.Name = "cb_photo";
+            this.cb_photo.Size = new System.Drawing.Size(48, 16);
+            this.cb_photo.TabIndex = 42;
+            this.cb_photo.Text = "照片";
+            this.cb_photo.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // cb_zk
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Enabled = false;
-            this.checkBox3.Location = new System.Drawing.Point(139, 20);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(48, 16);
-            this.checkBox3.TabIndex = 43;
-            this.checkBox3.Text = "租客";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cb_zk.AutoSize = true;
+            this.cb_zk.Enabled = false;
+            this.cb_zk.Location = new System.Drawing.Point(139, 20);
+            this.cb_zk.Name = "cb_zk";
+            this.cb_zk.Size = new System.Drawing.Size(48, 16);
+            this.cb_zk.TabIndex = 43;
+            this.cb_zk.Text = "租客";
+            this.cb_zk.UseVisualStyleBackColor = true;
             // 
-            // label15
+            // la_qfrq
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(339, 55);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 12);
-            this.label15.TabIndex = 46;
-            this.label15.Text = "签发日期";
+            this.la_qfrq.AutoSize = true;
+            this.la_qfrq.Location = new System.Drawing.Point(339, 55);
+            this.la_qfrq.Name = "la_qfrq";
+            this.la_qfrq.Size = new System.Drawing.Size(53, 12);
+            this.la_qfrq.TabIndex = 46;
+            this.la_qfrq.Text = "签发日期";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.textBox9);
-            this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.comboBox5);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.tb_xjdz);
+            this.groupBox2.Controls.Add(this.la_xjdz);
+            this.groupBox2.Controls.Add(this.tb_yhzgx);
+            this.groupBox2.Controls.Add(this.la_yhzgx);
+            this.groupBox2.Controls.Add(this.cb_hz);
+            this.groupBox2.Controls.Add(this.la_hz);
+            this.groupBox2.Controls.Add(this.dtp_qfrq);
+            this.groupBox2.Controls.Add(this.dtp_jlsj);
+            this.groupBox2.Controls.Add(this.la_qfrq);
+            this.groupBox2.Controls.Add(this.cb_zk);
+            this.groupBox2.Controls.Add(this.cb_photo);
+            this.groupBox2.Controls.Add(this.la_jlsj);
+            this.groupBox2.Controls.Add(this.tb_mz);
+            this.groupBox2.Controls.Add(this.la_mz);
             this.groupBox2.Controls.Add(this.checkBox1);
             this.groupBox2.Location = new System.Drawing.Point(12, 180);
             this.groupBox2.Name = "groupBox2";
@@ -528,104 +528,105 @@ namespace 草堂街道社会智能数据管理系统
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
-            // textBox10
+            // tb_xjdz
             // 
-            this.textBox10.Enabled = false;
-            this.textBox10.Location = new System.Drawing.Point(269, 15);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(567, 21);
-            this.textBox10.TabIndex = 45;
+            this.tb_xjdz.Enabled = false;
+            this.tb_xjdz.Location = new System.Drawing.Point(269, 15);
+            this.tb_xjdz.Name = "tb_xjdz";
+            this.tb_xjdz.Size = new System.Drawing.Size(567, 21);
+            this.tb_xjdz.TabIndex = 45;
             // 
-            // label18
+            // la_xjdz
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(210, 20);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(53, 12);
-            this.label18.TabIndex = 51;
-            this.label18.Text = "现居地址";
+            this.la_xjdz.AutoSize = true;
+            this.la_xjdz.Location = new System.Drawing.Point(210, 20);
+            this.la_xjdz.Name = "la_xjdz";
+            this.la_xjdz.Size = new System.Drawing.Size(53, 12);
+            this.la_xjdz.TabIndex = 51;
+            this.la_xjdz.Text = "现居地址";
             // 
-            // textBox9
+            // tb_yhzgx
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(736, 49);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 21);
-            this.textBox9.TabIndex = 28;
+            this.tb_yhzgx.Enabled = false;
+            this.tb_yhzgx.Location = new System.Drawing.Point(736, 49);
+            this.tb_yhzgx.Name = "tb_yhzgx";
+            this.tb_yhzgx.Size = new System.Drawing.Size(100, 21);
+            this.tb_yhzgx.TabIndex = 28;
             // 
-            // label17
+            // la_yhzgx
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(665, 54);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 12);
-            this.label17.TabIndex = 50;
-            this.label17.Text = "与户主关系";
+            this.la_yhzgx.AutoSize = true;
+            this.la_yhzgx.Location = new System.Drawing.Point(665, 54);
+            this.la_yhzgx.Name = "la_yhzgx";
+            this.la_yhzgx.Size = new System.Drawing.Size(65, 12);
+            this.la_yhzgx.TabIndex = 50;
+            this.la_yhzgx.Text = "与户主关系";
             // 
-            // comboBox5
+            // cb_hz
             // 
-            this.comboBox5.Enabled = false;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.cb_hz.Enabled = false;
+            this.cb_hz.FormatString = "否";
+            this.cb_hz.FormattingEnabled = true;
+            this.cb_hz.Items.AddRange(new object[] {
             "是",
             "否"});
-            this.comboBox5.Location = new System.Drawing.Point(559, 49);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(100, 20);
-            this.comboBox5.TabIndex = 45;
+            this.cb_hz.Location = new System.Drawing.Point(559, 49);
+            this.cb_hz.Name = "cb_hz";
+            this.cb_hz.Size = new System.Drawing.Size(100, 20);
+            this.cb_hz.TabIndex = 45;
             // 
-            // label16
+            // la_hz
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(524, 55);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(29, 12);
-            this.label16.TabIndex = 49;
-            this.label16.Text = "户主";
+            this.la_hz.AutoSize = true;
+            this.la_hz.Location = new System.Drawing.Point(524, 55);
+            this.la_hz.Name = "la_hz";
+            this.la_hz.Size = new System.Drawing.Size(29, 12);
+            this.la_hz.TabIndex = 49;
+            this.la_hz.Text = "户主";
             // 
-            // dateTimePicker2
+            // dtp_qfrq
             // 
-            this.dateTimePicker2.Enabled = false;
-            this.dateTimePicker2.Location = new System.Drawing.Point(398, 49);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(120, 21);
-            this.dateTimePicker2.TabIndex = 48;
+            this.dtp_qfrq.Enabled = false;
+            this.dtp_qfrq.Location = new System.Drawing.Point(398, 49);
+            this.dtp_qfrq.Name = "dtp_qfrq";
+            this.dtp_qfrq.Size = new System.Drawing.Size(120, 21);
+            this.dtp_qfrq.TabIndex = 48;
             // 
-            // dateTimePicker1
+            // dtp_jlsj
             // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(212, 49);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(120, 21);
-            this.dateTimePicker1.TabIndex = 47;
+            this.dtp_jlsj.Enabled = false;
+            this.dtp_jlsj.Location = new System.Drawing.Point(212, 49);
+            this.dtp_jlsj.Name = "dtp_jlsj";
+            this.dtp_jlsj.Size = new System.Drawing.Size(120, 21);
+            this.dtp_jlsj.TabIndex = 47;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox15);
+            this.groupBox3.Controls.Add(this.tb_gx);
             this.groupBox3.Controls.Add(this.label23);
-            this.groupBox3.Controls.Add(this.textBox14);
+            this.groupBox3.Controls.Add(this.tb_jkr);
             this.groupBox3.Controls.Add(this.label22);
-            this.groupBox3.Controls.Add(this.textBox13);
+            this.groupBox3.Controls.Add(this.tb_dj);
             this.groupBox3.Controls.Add(this.label21);
-            this.groupBox3.Controls.Add(this.textBox12);
+            this.groupBox3.Controls.Add(this.tb_hmz);
             this.groupBox3.Controls.Add(this.label20);
-            this.groupBox3.Controls.Add(this.textBox11);
+            this.groupBox3.Controls.Add(this.tb_cjz);
             this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.comboBox6);
-            this.groupBox3.Controls.Add(this.checkBox6);
+            this.groupBox3.Controls.Add(this.cb_feature);
+            this.groupBox3.Controls.Add(this.cb_handicapped);
             this.groupBox3.Location = new System.Drawing.Point(12, 272);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(984, 52);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             // 
-            // textBox15
+            // tb_gx
             // 
-            this.textBox15.Enabled = false;
-            this.textBox15.Location = new System.Drawing.Point(839, 15);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 21);
-            this.textBox15.TabIndex = 62;
+            this.tb_gx.Enabled = false;
+            this.tb_gx.Location = new System.Drawing.Point(839, 15);
+            this.tb_gx.Name = "tb_gx";
+            this.tb_gx.Size = new System.Drawing.Size(100, 21);
+            this.tb_gx.TabIndex = 62;
             // 
             // label23
             // 
@@ -636,13 +637,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label23.TabIndex = 61;
             this.label23.Text = "关系";
             // 
-            // textBox14
+            // tb_jkr
             // 
-            this.textBox14.Enabled = false;
-            this.textBox14.Location = new System.Drawing.Point(698, 15);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 21);
-            this.textBox14.TabIndex = 60;
+            this.tb_jkr.Enabled = false;
+            this.tb_jkr.Location = new System.Drawing.Point(698, 15);
+            this.tb_jkr.Name = "tb_jkr";
+            this.tb_jkr.Size = new System.Drawing.Size(100, 21);
+            this.tb_jkr.TabIndex = 60;
             // 
             // label22
             // 
@@ -653,13 +654,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label22.TabIndex = 59;
             this.label22.Text = "监护人";
             // 
-            // textBox13
+            // tb_dj
             // 
-            this.textBox13.Enabled = false;
-            this.textBox13.Location = new System.Drawing.Point(545, 17);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 21);
-            this.textBox13.TabIndex = 58;
+            this.tb_dj.Enabled = false;
+            this.tb_dj.Location = new System.Drawing.Point(545, 17);
+            this.tb_dj.Name = "tb_dj";
+            this.tb_dj.Size = new System.Drawing.Size(100, 21);
+            this.tb_dj.TabIndex = 58;
             // 
             // label21
             // 
@@ -670,13 +671,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label21.TabIndex = 57;
             this.label21.Text = "等级";
             // 
-            // textBox12
+            // tb_hmz
             // 
-            this.textBox12.Enabled = false;
-            this.textBox12.Location = new System.Drawing.Point(182, 18);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 21);
-            this.textBox12.TabIndex = 55;
+            this.tb_hmz.Enabled = false;
+            this.tb_hmz.Location = new System.Drawing.Point(182, 18);
+            this.tb_hmz.Name = "tb_hmz";
+            this.tb_hmz.Size = new System.Drawing.Size(100, 21);
+            this.tb_hmz.TabIndex = 55;
             // 
             // label20
             // 
@@ -687,13 +688,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label20.TabIndex = 56;
             this.label20.Text = "民族";
             // 
-            // textBox11
+            // tb_cjz
             // 
-            this.textBox11.Enabled = false;
-            this.textBox11.Location = new System.Drawing.Point(335, 18);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(174, 21);
-            this.textBox11.TabIndex = 52;
+            this.tb_cjz.Enabled = false;
+            this.tb_cjz.Location = new System.Drawing.Point(335, 18);
+            this.tb_cjz.Name = "tb_cjz";
+            this.tb_cjz.Size = new System.Drawing.Size(174, 21);
+            this.tb_cjz.TabIndex = 52;
             // 
             // label19
             // 
@@ -704,73 +705,74 @@ namespace 草堂街道社会智能数据管理系统
             this.label19.TabIndex = 54;
             this.label19.Text = "残疾证";
             // 
-            // comboBox6
+            // cb_feature
             // 
-            this.comboBox6.Enabled = false;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.cb_feature.Enabled = false;
+            this.cb_feature.FormattingEnabled = true;
+            this.cb_feature.Items.AddRange(new object[] {
             "肢体",
             "精神"});
-            this.comboBox6.Location = new System.Drawing.Point(73, 18);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(68, 20);
-            this.comboBox6.TabIndex = 54;
+            this.cb_feature.Location = new System.Drawing.Point(73, 18);
+            this.cb_feature.Name = "cb_feature";
+            this.cb_feature.Size = new System.Drawing.Size(68, 20);
+            this.cb_feature.TabIndex = 54;
             // 
-            // checkBox6
+            // cb_handicapped
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(7, 20);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(60, 16);
-            this.checkBox6.TabIndex = 52;
-            this.checkBox6.Text = "残疾人";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.cb_handicapped.AutoSize = true;
+            this.cb_handicapped.Location = new System.Drawing.Point(7, 20);
+            this.cb_handicapped.Name = "cb_handicapped";
+            this.cb_handicapped.Size = new System.Drawing.Size(60, 16);
+            this.cb_handicapped.TabIndex = 52;
+            this.cb_handicapped.Text = "残疾人";
+            this.cb_handicapped.UseVisualStyleBackColor = true;
+            this.cb_handicapped.CheckedChanged += new System.EventHandler(this.cb_handicapped_CheckedChanged);
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.checkBox8);
-            this.groupBox4.Controls.Add(this.textBox23);
+            this.groupBox4.Controls.Add(this.jwry_czjwr_cb);
+            this.groupBox4.Controls.Add(this.jwry_lxrdh_tb);
             this.groupBox4.Controls.Add(this.label32);
-            this.groupBox4.Controls.Add(this.textBox22);
+            this.groupBox4.Controls.Add(this.jwry_lxr_tb);
             this.groupBox4.Controls.Add(this.label31);
-            this.groupBox4.Controls.Add(this.textBox21);
+            this.groupBox4.Controls.Add(this.jwry_jdr_tb);
             this.groupBox4.Controls.Add(this.label30);
-            this.groupBox4.Controls.Add(this.comboBox7);
+            this.groupBox4.Controls.Add(this.jwry_f_cb);
             this.groupBox4.Controls.Add(this.label29);
-            this.groupBox4.Controls.Add(this.dateTimePicker4);
+            this.groupBox4.Controls.Add(this.jwry_lksj_dtp);
             this.groupBox4.Controls.Add(this.label28);
-            this.groupBox4.Controls.Add(this.dateTimePicker3);
+            this.groupBox4.Controls.Add(this.jyry_qzyxq_dtp);
             this.groupBox4.Controls.Add(this.label27);
-            this.groupBox4.Controls.Add(this.textBox20);
+            this.groupBox4.Controls.Add(this.jwry_qzlx_tb);
             this.groupBox4.Controls.Add(this.label26);
-            this.groupBox4.Controls.Add(this.textBox17);
+            this.groupBox4.Controls.Add(this.jwry_zjhm_tb);
             this.groupBox4.Controls.Add(this.label25);
-            this.groupBox4.Controls.Add(this.textBox16);
+            this.groupBox4.Controls.Add(this.jwry_gj_tb);
             this.groupBox4.Controls.Add(this.label24);
-            this.groupBox4.Controls.Add(this.checkBox7);
+            this.groupBox4.Controls.Add(this.cb_jwry);
             this.groupBox4.Location = new System.Drawing.Point(12, 330);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(984, 88);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             // 
-            // checkBox8
+            // jwry_czjwr_cb
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(628, 53);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(84, 16);
-            this.checkBox8.TabIndex = 76;
-            this.checkBox8.Text = "常住境外人";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.jwry_czjwr_cb.AutoSize = true;
+            this.jwry_czjwr_cb.Location = new System.Drawing.Point(628, 53);
+            this.jwry_czjwr_cb.Name = "jwry_czjwr_cb";
+            this.jwry_czjwr_cb.Size = new System.Drawing.Size(84, 16);
+            this.jwry_czjwr_cb.TabIndex = 76;
+            this.jwry_czjwr_cb.Text = "常住境外人";
+            this.jwry_czjwr_cb.UseVisualStyleBackColor = true;
             // 
-            // textBox23
+            // jwry_lxrdh_tb
             // 
-            this.textBox23.Enabled = false;
-            this.textBox23.Location = new System.Drawing.Point(518, 50);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(100, 21);
-            this.textBox23.TabIndex = 75;
+            this.jwry_lxrdh_tb.Enabled = false;
+            this.jwry_lxrdh_tb.Location = new System.Drawing.Point(518, 50);
+            this.jwry_lxrdh_tb.Name = "jwry_lxrdh_tb";
+            this.jwry_lxrdh_tb.Size = new System.Drawing.Size(100, 21);
+            this.jwry_lxrdh_tb.TabIndex = 75;
             // 
             // label32
             // 
@@ -781,13 +783,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label32.TabIndex = 74;
             this.label32.Text = "联系人电话";
             // 
-            // textBox22
+            // jwry_lxr_tb
             // 
-            this.textBox22.Enabled = false;
-            this.textBox22.Location = new System.Drawing.Point(341, 51);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(100, 21);
-            this.textBox22.TabIndex = 73;
+            this.jwry_lxr_tb.Enabled = false;
+            this.jwry_lxr_tb.Location = new System.Drawing.Point(341, 51);
+            this.jwry_lxr_tb.Name = "jwry_lxr_tb";
+            this.jwry_lxr_tb.Size = new System.Drawing.Size(100, 21);
+            this.jwry_lxr_tb.TabIndex = 73;
             // 
             // label31
             // 
@@ -798,13 +800,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label31.TabIndex = 72;
             this.label31.Text = "联系人";
             // 
-            // textBox21
+            // jwry_jdr_tb
             // 
-            this.textBox21.Enabled = false;
-            this.textBox21.Location = new System.Drawing.Point(178, 50);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(111, 21);
-            this.textBox21.TabIndex = 71;
+            this.jwry_jdr_tb.Enabled = false;
+            this.jwry_jdr_tb.Location = new System.Drawing.Point(178, 50);
+            this.jwry_jdr_tb.Name = "jwry_jdr_tb";
+            this.jwry_jdr_tb.Size = new System.Drawing.Size(111, 21);
+            this.jwry_jdr_tb.TabIndex = 71;
             // 
             // label30
             // 
@@ -815,18 +817,18 @@ namespace 草堂街道社会智能数据管理系统
             this.label30.TabIndex = 70;
             this.label30.Text = "接待单位（人）";
             // 
-            // comboBox7
+            // jwry_f_cb
             // 
-            this.comboBox7.Enabled = false;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.jwry_f_cb.Enabled = false;
+            this.jwry_f_cb.FormattingEnabled = true;
+            this.jwry_f_cb.Items.AddRange(new object[] {
             "购",
             "租",
             "借"});
-            this.comboBox7.Location = new System.Drawing.Point(29, 51);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(38, 20);
-            this.comboBox7.TabIndex = 63;
+            this.jwry_f_cb.Location = new System.Drawing.Point(29, 51);
+            this.jwry_f_cb.Name = "jwry_f_cb";
+            this.jwry_f_cb.Size = new System.Drawing.Size(38, 20);
+            this.jwry_f_cb.TabIndex = 63;
             // 
             // label29
             // 
@@ -837,13 +839,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label29.TabIndex = 69;
             this.label29.Text = "房";
             // 
-            // dateTimePicker4
+            // jwry_lksj_dtp
             // 
-            this.dateTimePicker4.Enabled = false;
-            this.dateTimePicker4.Location = new System.Drawing.Point(825, 14);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(120, 21);
-            this.dateTimePicker4.TabIndex = 68;
+            this.jwry_lksj_dtp.Enabled = false;
+            this.jwry_lksj_dtp.Location = new System.Drawing.Point(825, 14);
+            this.jwry_lksj_dtp.Name = "jwry_lksj_dtp";
+            this.jwry_lksj_dtp.Size = new System.Drawing.Size(120, 21);
+            this.jwry_lksj_dtp.TabIndex = 68;
             // 
             // label28
             // 
@@ -854,13 +856,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label28.TabIndex = 67;
             this.label28.Text = "拟离开时间";
             // 
-            // dateTimePicker3
+            // jyry_qzyxq_dtp
             // 
-            this.dateTimePicker3.Enabled = false;
-            this.dateTimePicker3.Location = new System.Drawing.Point(628, 14);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(120, 21);
-            this.dateTimePicker3.TabIndex = 52;
+            this.jyry_qzyxq_dtp.Enabled = false;
+            this.jyry_qzyxq_dtp.Location = new System.Drawing.Point(628, 14);
+            this.jyry_qzyxq_dtp.Name = "jyry_qzyxq_dtp";
+            this.jyry_qzyxq_dtp.Size = new System.Drawing.Size(120, 21);
+            this.jyry_qzyxq_dtp.TabIndex = 52;
             // 
             // label27
             // 
@@ -871,13 +873,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label27.TabIndex = 52;
             this.label27.Text = "签证有效期";
             // 
-            // textBox20
+            // jwry_qzlx_tb
             // 
-            this.textBox20.Enabled = false;
-            this.textBox20.Location = new System.Drawing.Point(442, 14);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 21);
-            this.textBox20.TabIndex = 66;
+            this.jwry_qzlx_tb.Enabled = false;
+            this.jwry_qzlx_tb.Location = new System.Drawing.Point(442, 14);
+            this.jwry_qzlx_tb.Name = "jwry_qzlx_tb";
+            this.jwry_qzlx_tb.Size = new System.Drawing.Size(100, 21);
+            this.jwry_qzlx_tb.TabIndex = 66;
             // 
             // label26
             // 
@@ -888,13 +890,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label26.TabIndex = 65;
             this.label26.Text = "签证（注）类型";
             // 
-            // textBox17
+            // jwry_zjhm_tb
             // 
-            this.textBox17.Enabled = false;
-            this.textBox17.Location = new System.Drawing.Point(241, 15);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 21);
-            this.textBox17.TabIndex = 63;
+            this.jwry_zjhm_tb.Enabled = false;
+            this.jwry_zjhm_tb.Location = new System.Drawing.Point(241, 15);
+            this.jwry_zjhm_tb.Name = "jwry_zjhm_tb";
+            this.jwry_zjhm_tb.Size = new System.Drawing.Size(100, 21);
+            this.jwry_zjhm_tb.TabIndex = 63;
             // 
             // label25
             // 
@@ -905,13 +907,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label25.TabIndex = 64;
             this.label25.Text = "证件号码";
             // 
-            // textBox16
+            // jwry_gj_tb
             // 
-            this.textBox16.Enabled = false;
-            this.textBox16.Location = new System.Drawing.Point(119, 15);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(57, 21);
-            this.textBox16.TabIndex = 52;
+            this.jwry_gj_tb.Enabled = false;
+            this.jwry_gj_tb.Location = new System.Drawing.Point(119, 15);
+            this.jwry_gj_tb.Name = "jwry_gj_tb";
+            this.jwry_gj_tb.Size = new System.Drawing.Size(57, 21);
+            this.jwry_gj_tb.TabIndex = 52;
             // 
             // label24
             // 
@@ -922,34 +924,35 @@ namespace 草堂街道社会智能数据管理系统
             this.label24.TabIndex = 52;
             this.label24.Text = "国籍";
             // 
-            // checkBox7
+            // cb_jwry
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(6, 20);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(72, 16);
-            this.checkBox7.TabIndex = 63;
-            this.checkBox7.Text = "境外人员";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.cb_jwry.AutoSize = true;
+            this.cb_jwry.Location = new System.Drawing.Point(6, 20);
+            this.cb_jwry.Name = "cb_jwry";
+            this.cb_jwry.Size = new System.Drawing.Size(72, 16);
+            this.cb_jwry.TabIndex = 63;
+            this.cb_jwry.Text = "境外人员";
+            this.cb_jwry.UseVisualStyleBackColor = true;
+            this.cb_jwry.CheckedChanged += new System.EventHandler(this.cb_jwry_CheckedChanged);
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox24);
+            this.groupBox5.Controls.Add(this.dbry_id_tb);
             this.groupBox5.Controls.Add(this.label33);
-            this.groupBox5.Controls.Add(this.checkBox9);
+            this.groupBox5.Controls.Add(this.cb_dbry);
             this.groupBox5.Location = new System.Drawing.Point(12, 424);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(984, 46);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             // 
-            // textBox24
+            // dbry_id_tb
             // 
-            this.textBox24.Enabled = false;
-            this.textBox24.Location = new System.Drawing.Point(133, 15);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(111, 21);
-            this.textBox24.TabIndex = 77;
+            this.dbry_id_tb.Enabled = false;
+            this.dbry_id_tb.Location = new System.Drawing.Point(133, 15);
+            this.dbry_id_tb.Name = "dbry_id_tb";
+            this.dbry_id_tb.Size = new System.Drawing.Size(111, 21);
+            this.dbry_id_tb.TabIndex = 77;
             // 
             // label33
             // 
@@ -960,46 +963,47 @@ namespace 草堂街道社会智能数据管理系统
             this.label33.TabIndex = 77;
             this.label33.Text = "低保号";
             // 
-            // checkBox9
+            // cb_dbry
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(8, 20);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(72, 16);
-            this.checkBox9.TabIndex = 77;
-            this.checkBox9.Text = "低保人员";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.cb_dbry.AutoSize = true;
+            this.cb_dbry.Location = new System.Drawing.Point(8, 20);
+            this.cb_dbry.Name = "cb_dbry";
+            this.cb_dbry.Size = new System.Drawing.Size(72, 16);
+            this.cb_dbry.TabIndex = 77;
+            this.cb_dbry.Text = "低保人员";
+            this.cb_dbry.UseVisualStyleBackColor = true;
+            this.cb_dbry.CheckedChanged += new System.EventHandler(this.cb_dbry_CheckedChanged);
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.dateTimePicker6);
+            this.groupBox6.Controls.Add(this.jzry_jzqe_dtp);
             this.groupBox6.Controls.Add(this.label44);
-            this.groupBox6.Controls.Add(this.dateTimePicker5);
-            this.groupBox6.Controls.Add(this.label43);
-            this.groupBox6.Controls.Add(this.textBox29);
+            this.groupBox6.Controls.Add(this.jzry_jzqs_dtp);
+            this.groupBox6.Controls.Add(this.jzry_jzqs);
+            this.groupBox6.Controls.Add(this.jzry_jxjy_tb);
             this.groupBox6.Controls.Add(this.label38);
-            this.groupBox6.Controls.Add(this.textBox28);
+            this.groupBox6.Controls.Add(this.jzry_jzlb_tb);
             this.groupBox6.Controls.Add(this.label37);
-            this.groupBox6.Controls.Add(this.textBox27);
+            this.groupBox6.Controls.Add(this.jzry_ypxq);
             this.groupBox6.Controls.Add(this.label36);
-            this.groupBox6.Controls.Add(this.textBox26);
+            this.groupBox6.Controls.Add(this.jzry_fzlx_tb);
             this.groupBox6.Controls.Add(this.label35);
-            this.groupBox6.Controls.Add(this.textBox25);
+            this.groupBox6.Controls.Add(this.jzry_zm_tb);
             this.groupBox6.Controls.Add(this.label34);
-            this.groupBox6.Controls.Add(this.checkBox11);
+            this.groupBox6.Controls.Add(this.cb_jzry);
             this.groupBox6.Location = new System.Drawing.Point(12, 476);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(984, 79);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             // 
-            // dateTimePicker6
+            // jzry_jzqe_dtp
             // 
-            this.dateTimePicker6.Enabled = false;
-            this.dateTimePicker6.Location = new System.Drawing.Point(252, 46);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(120, 21);
-            this.dateTimePicker6.TabIndex = 86;
+            this.jzry_jzqe_dtp.Enabled = false;
+            this.jzry_jzqe_dtp.Location = new System.Drawing.Point(252, 46);
+            this.jzry_jzqe_dtp.Name = "jzry_jzqe_dtp";
+            this.jzry_jzqe_dtp.Size = new System.Drawing.Size(120, 21);
+            this.jzry_jzqe_dtp.TabIndex = 86;
             // 
             // label44
             // 
@@ -1010,30 +1014,30 @@ namespace 草堂街道社会智能数据管理系统
             this.label44.TabIndex = 85;
             this.label44.Text = "矫正期止";
             // 
-            // dateTimePicker5
+            // jzry_jzqs_dtp
             // 
-            this.dateTimePicker5.Enabled = false;
-            this.dateTimePicker5.Location = new System.Drawing.Point(67, 46);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(120, 21);
-            this.dateTimePicker5.TabIndex = 52;
+            this.jzry_jzqs_dtp.Enabled = false;
+            this.jzry_jzqs_dtp.Location = new System.Drawing.Point(67, 46);
+            this.jzry_jzqs_dtp.Name = "jzry_jzqs_dtp";
+            this.jzry_jzqs_dtp.Size = new System.Drawing.Size(120, 21);
+            this.jzry_jzqs_dtp.TabIndex = 52;
             // 
-            // label43
+            // jzry_jzqs
             // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(6, 52);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(53, 12);
-            this.label43.TabIndex = 52;
-            this.label43.Text = "矫正期起";
+            this.jzry_jzqs.AutoSize = true;
+            this.jzry_jzqs.Location = new System.Drawing.Point(6, 52);
+            this.jzry_jzqs.Name = "jzry_jzqs";
+            this.jzry_jzqs.Size = new System.Drawing.Size(53, 12);
+            this.jzry_jzqs.TabIndex = 52;
+            this.jzry_jzqs.Text = "矫正期起";
             // 
-            // textBox29
+            // jzry_jxjy_tb
             // 
-            this.textBox29.Enabled = false;
-            this.textBox29.Location = new System.Drawing.Point(825, 15);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(100, 21);
-            this.textBox29.TabIndex = 80;
+            this.jzry_jxjy_tb.Enabled = false;
+            this.jzry_jxjy_tb.Location = new System.Drawing.Point(825, 15);
+            this.jzry_jxjy_tb.Name = "jzry_jxjy_tb";
+            this.jzry_jxjy_tb.Size = new System.Drawing.Size(100, 21);
+            this.jzry_jxjy_tb.TabIndex = 80;
             // 
             // label38
             // 
@@ -1044,13 +1048,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label38.TabIndex = 83;
             this.label38.Text = "就业就学";
             // 
-            // textBox28
+            // jzry_jzlb_tb
             // 
-            this.textBox28.Enabled = false;
-            this.textBox28.Location = new System.Drawing.Point(657, 15);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(100, 21);
-            this.textBox28.TabIndex = 79;
+            this.jzry_jzlb_tb.Enabled = false;
+            this.jzry_jzlb_tb.Location = new System.Drawing.Point(657, 15);
+            this.jzry_jzlb_tb.Name = "jzry_jzlb_tb";
+            this.jzry_jzlb_tb.Size = new System.Drawing.Size(100, 21);
+            this.jzry_jzlb_tb.TabIndex = 79;
             // 
             // label37
             // 
@@ -1061,13 +1065,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label37.TabIndex = 84;
             this.label37.Text = "矫正类别";
             // 
-            // textBox27
+            // jzry_ypxq
             // 
-            this.textBox27.Enabled = false;
-            this.textBox27.Location = new System.Drawing.Point(395, 15);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(197, 21);
-            this.textBox27.TabIndex = 83;
+            this.jzry_ypxq.Enabled = false;
+            this.jzry_ypxq.Location = new System.Drawing.Point(395, 15);
+            this.jzry_ypxq.Name = "jzry_ypxq";
+            this.jzry_ypxq.Size = new System.Drawing.Size(197, 21);
+            this.jzry_ypxq.TabIndex = 83;
             // 
             // label36
             // 
@@ -1078,13 +1082,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label36.TabIndex = 82;
             this.label36.Text = "原判刑期";
             // 
-            // textBox26
+            // jzry_fzlx_tb
             // 
-            this.textBox26.Enabled = false;
-            this.textBox26.Location = new System.Drawing.Point(249, 15);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(80, 21);
-            this.textBox26.TabIndex = 81;
+            this.jzry_fzlx_tb.Enabled = false;
+            this.jzry_fzlx_tb.Location = new System.Drawing.Point(249, 15);
+            this.jzry_fzlx_tb.Name = "jzry_fzlx_tb";
+            this.jzry_fzlx_tb.Size = new System.Drawing.Size(80, 21);
+            this.jzry_fzlx_tb.TabIndex = 81;
             // 
             // label35
             // 
@@ -1095,13 +1099,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label35.TabIndex = 80;
             this.label35.Text = "犯罪类型";
             // 
-            // textBox25
+            // jzry_zm_tb
             // 
-            this.textBox25.Enabled = false;
-            this.textBox25.Location = new System.Drawing.Point(119, 15);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(66, 21);
-            this.textBox25.TabIndex = 79;
+            this.jzry_zm_tb.Enabled = false;
+            this.jzry_zm_tb.Location = new System.Drawing.Point(119, 15);
+            this.jzry_zm_tb.Name = "jzry_zm_tb";
+            this.jzry_zm_tb.Size = new System.Drawing.Size(66, 21);
+            this.jzry_zm_tb.TabIndex = 79;
             // 
             // label34
             // 
@@ -1112,42 +1116,43 @@ namespace 草堂街道社会智能数据管理系统
             this.label34.TabIndex = 77;
             this.label34.Text = "罪名";
             // 
-            // checkBox11
+            // cb_jzry
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(8, 20);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(72, 16);
-            this.checkBox11.TabIndex = 79;
-            this.checkBox11.Text = "矫正人员";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.cb_jzry.AutoSize = true;
+            this.cb_jzry.Location = new System.Drawing.Point(8, 20);
+            this.cb_jzry.Name = "cb_jzry";
+            this.cb_jzry.Size = new System.Drawing.Size(72, 16);
+            this.cb_jzry.TabIndex = 79;
+            this.cb_jzry.Text = "矫正人员";
+            this.cb_jzry.UseVisualStyleBackColor = true;
+            this.cb_jzry.CheckedChanged += new System.EventHandler(this.cb_jzry_CheckedChanged);
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.dateTimePicker9);
+            this.groupBox7.Controls.Add(this.xmsfry_sfsj_dtp);
             this.groupBox7.Controls.Add(this.label40);
-            this.groupBox7.Controls.Add(this.dateTimePicker8);
+            this.groupBox7.Controls.Add(this.xmsfry_zxqz_dtp);
             this.groupBox7.Controls.Add(this.label45);
-            this.groupBox7.Controls.Add(this.dateTimePicker7);
-            this.groupBox7.Controls.Add(this.textBox30);
+            this.groupBox7.Controls.Add(this.xmsfry_zxqq_dtp);
+            this.groupBox7.Controls.Add(this.xmsfry_fxjyhdq_tb);
             this.groupBox7.Controls.Add(this.label39);
             this.groupBox7.Controls.Add(this.label41);
-            this.groupBox7.Controls.Add(this.textBox33);
+            this.groupBox7.Controls.Add(this.xmsfry_zm_tb);
             this.groupBox7.Controls.Add(this.label42);
-            this.groupBox7.Controls.Add(this.checkBox12);
+            this.groupBox7.Controls.Add(this.cb_xfsfry);
             this.groupBox7.Location = new System.Drawing.Point(12, 561);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(984, 46);
             this.groupBox7.TabIndex = 6;
             this.groupBox7.TabStop = false;
             // 
-            // dateTimePicker9
+            // xmsfry_sfsj_dtp
             // 
-            this.dateTimePicker9.Enabled = false;
-            this.dateTimePicker9.Location = new System.Drawing.Point(827, 16);
-            this.dateTimePicker9.Name = "dateTimePicker9";
-            this.dateTimePicker9.Size = new System.Drawing.Size(120, 21);
-            this.dateTimePicker9.TabIndex = 91;
+            this.xmsfry_sfsj_dtp.Enabled = false;
+            this.xmsfry_sfsj_dtp.Location = new System.Drawing.Point(827, 16);
+            this.xmsfry_sfsj_dtp.Name = "xmsfry_sfsj_dtp";
+            this.xmsfry_sfsj_dtp.Size = new System.Drawing.Size(120, 21);
+            this.xmsfry_sfsj_dtp.TabIndex = 91;
             // 
             // label40
             // 
@@ -1158,13 +1163,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label40.TabIndex = 90;
             this.label40.Text = "释放时间";
             // 
-            // dateTimePicker8
+            // xmsfry_zxqz_dtp
             // 
-            this.dateTimePicker8.Enabled = false;
-            this.dateTimePicker8.Location = new System.Drawing.Point(440, 16);
-            this.dateTimePicker8.Name = "dateTimePicker8";
-            this.dateTimePicker8.Size = new System.Drawing.Size(120, 21);
-            this.dateTimePicker8.TabIndex = 89;
+            this.xmsfry_zxqz_dtp.Enabled = false;
+            this.xmsfry_zxqz_dtp.Location = new System.Drawing.Point(440, 16);
+            this.xmsfry_zxqz_dtp.Name = "xmsfry_zxqz_dtp";
+            this.xmsfry_zxqz_dtp.Size = new System.Drawing.Size(120, 21);
+            this.xmsfry_zxqz_dtp.TabIndex = 89;
             // 
             // label45
             // 
@@ -1175,21 +1180,21 @@ namespace 草堂街道社会智能数据管理系统
             this.label45.TabIndex = 88;
             this.label45.Text = "执行期止";
             // 
-            // dateTimePicker7
+            // xmsfry_zxqq_dtp
             // 
-            this.dateTimePicker7.Enabled = false;
-            this.dateTimePicker7.Location = new System.Drawing.Point(258, 17);
-            this.dateTimePicker7.Name = "dateTimePicker7";
-            this.dateTimePicker7.Size = new System.Drawing.Size(120, 21);
-            this.dateTimePicker7.TabIndex = 87;
+            this.xmsfry_zxqq_dtp.Enabled = false;
+            this.xmsfry_zxqq_dtp.Location = new System.Drawing.Point(258, 17);
+            this.xmsfry_zxqq_dtp.Name = "xmsfry_zxqq_dtp";
+            this.xmsfry_zxqq_dtp.Size = new System.Drawing.Size(120, 21);
+            this.xmsfry_zxqq_dtp.TabIndex = 87;
             // 
-            // textBox30
+            // xmsfry_fxjyhdq_tb
             // 
-            this.textBox30.Enabled = false;
-            this.textBox30.Location = new System.Drawing.Point(659, 16);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(100, 21);
-            this.textBox30.TabIndex = 80;
+            this.xmsfry_fxjyhdq_tb.Enabled = false;
+            this.xmsfry_fxjyhdq_tb.Location = new System.Drawing.Point(659, 16);
+            this.xmsfry_fxjyhdq_tb.Name = "xmsfry_fxjyhdq_tb";
+            this.xmsfry_fxjyhdq_tb.Size = new System.Drawing.Size(100, 21);
+            this.xmsfry_fxjyhdq_tb.TabIndex = 80;
             // 
             // label39
             // 
@@ -1209,13 +1214,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label41.TabIndex = 82;
             this.label41.Text = "执行期起";
             // 
-            // textBox33
+            // xmsfry_zm_tb
             // 
-            this.textBox33.Enabled = false;
-            this.textBox33.Location = new System.Drawing.Point(137, 17);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(61, 21);
-            this.textBox33.TabIndex = 81;
+            this.xmsfry_zm_tb.Enabled = false;
+            this.xmsfry_zm_tb.Location = new System.Drawing.Point(137, 17);
+            this.xmsfry_zm_tb.Name = "xmsfry_zm_tb";
+            this.xmsfry_zm_tb.Size = new System.Drawing.Size(61, 21);
+            this.xmsfry_zm_tb.TabIndex = 81;
             // 
             // label42
             // 
@@ -1226,40 +1231,41 @@ namespace 草堂街道社会智能数据管理系统
             this.label42.TabIndex = 80;
             this.label42.Text = "罪名";
             // 
-            // checkBox12
+            // cb_xfsfry
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(8, 20);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(96, 16);
-            this.checkBox12.TabIndex = 79;
-            this.checkBox12.Text = "刑满释放人员";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.cb_xfsfry.AutoSize = true;
+            this.cb_xfsfry.Location = new System.Drawing.Point(8, 20);
+            this.cb_xfsfry.Name = "cb_xfsfry";
+            this.cb_xfsfry.Size = new System.Drawing.Size(96, 16);
+            this.cb_xfsfry.TabIndex = 79;
+            this.cb_xfsfry.Text = "刑满释放人员";
+            this.cb_xfsfry.UseVisualStyleBackColor = true;
+            this.cb_xfsfry.CheckedChanged += new System.EventHandler(this.cb_xfsfry_CheckedChanged);
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.textBox34);
+            this.groupBox8.Controls.Add(this.xdry_ryxz_tb);
             this.groupBox8.Controls.Add(this.label49);
-            this.groupBox8.Controls.Add(this.textBox32);
+            this.groupBox8.Controls.Add(this.xdry_dplb_tb);
             this.groupBox8.Controls.Add(this.label48);
-            this.groupBox8.Controls.Add(this.dateTimePicker10);
+            this.groupBox8.Controls.Add(this.xdry_ccfxrq_dtp);
             this.groupBox8.Controls.Add(this.label47);
-            this.groupBox8.Controls.Add(this.textBox31);
+            this.groupBox8.Controls.Add(this.xdry_hjpcs_tb);
             this.groupBox8.Controls.Add(this.label46);
-            this.groupBox8.Controls.Add(this.checkBox10);
+            this.groupBox8.Controls.Add(this.cb_xdry);
             this.groupBox8.Location = new System.Drawing.Point(13, 614);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(983, 63);
+            this.groupBox8.Size = new System.Drawing.Size(983, 49);
             this.groupBox8.TabIndex = 7;
             this.groupBox8.TabStop = false;
             // 
-            // textBox34
+            // xdry_ryxz_tb
             // 
-            this.textBox34.Enabled = false;
-            this.textBox34.Location = new System.Drawing.Point(826, 15);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(100, 21);
-            this.textBox34.TabIndex = 95;
+            this.xdry_ryxz_tb.Enabled = false;
+            this.xdry_ryxz_tb.Location = new System.Drawing.Point(826, 15);
+            this.xdry_ryxz_tb.Name = "xdry_ryxz_tb";
+            this.xdry_ryxz_tb.Size = new System.Drawing.Size(100, 21);
+            this.xdry_ryxz_tb.TabIndex = 95;
             // 
             // label49
             // 
@@ -1270,13 +1276,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label49.TabIndex = 94;
             this.label49.Text = "人员现状";
             // 
-            // textBox32
+            // xdry_dplb_tb
             // 
-            this.textBox32.Enabled = false;
-            this.textBox32.Location = new System.Drawing.Point(656, 15);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(100, 21);
-            this.textBox32.TabIndex = 92;
+            this.xdry_dplb_tb.Enabled = false;
+            this.xdry_dplb_tb.Location = new System.Drawing.Point(656, 15);
+            this.xdry_dplb_tb.Name = "xdry_dplb_tb";
+            this.xdry_dplb_tb.Size = new System.Drawing.Size(100, 21);
+            this.xdry_dplb_tb.TabIndex = 92;
             // 
             // label48
             // 
@@ -1287,13 +1293,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label48.TabIndex = 93;
             this.label48.Text = "毒品类别";
             // 
-            // dateTimePicker10
+            // xdry_ccfxrq_dtp
             // 
-            this.dateTimePicker10.Enabled = false;
-            this.dateTimePicker10.Location = new System.Drawing.Point(466, 15);
-            this.dateTimePicker10.Name = "dateTimePicker10";
-            this.dateTimePicker10.Size = new System.Drawing.Size(120, 21);
-            this.dateTimePicker10.TabIndex = 92;
+            this.xdry_ccfxrq_dtp.Enabled = false;
+            this.xdry_ccfxrq_dtp.Location = new System.Drawing.Point(466, 15);
+            this.xdry_ccfxrq_dtp.Name = "xdry_ccfxrq_dtp";
+            this.xdry_ccfxrq_dtp.Size = new System.Drawing.Size(120, 21);
+            this.xdry_ccfxrq_dtp.TabIndex = 92;
             // 
             // label47
             // 
@@ -1304,13 +1310,13 @@ namespace 草堂街道社会智能数据管理系统
             this.label47.TabIndex = 92;
             this.label47.Text = "初次发现日期";
             // 
-            // textBox31
+            // xdry_hjpcs_tb
             // 
-            this.textBox31.Enabled = false;
-            this.textBox31.Location = new System.Drawing.Point(156, 15);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(221, 21);
-            this.textBox31.TabIndex = 92;
+            this.xdry_hjpcs_tb.Enabled = false;
+            this.xdry_hjpcs_tb.Location = new System.Drawing.Point(156, 15);
+            this.xdry_hjpcs_tb.Name = "xdry_hjpcs_tb";
+            this.xdry_hjpcs_tb.Size = new System.Drawing.Size(221, 21);
+            this.xdry_hjpcs_tb.TabIndex = 92;
             // 
             // label46
             // 
@@ -1321,41 +1327,43 @@ namespace 草堂街道社会智能数据管理系统
             this.label46.TabIndex = 92;
             this.label46.Text = "户籍派出所";
             // 
-            // checkBox10
+            // cb_xdry
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(5, 20);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(72, 16);
-            this.checkBox10.TabIndex = 92;
-            this.checkBox10.Text = "吸毒人员";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.cb_xdry.AutoSize = true;
+            this.cb_xdry.Location = new System.Drawing.Point(5, 20);
+            this.cb_xdry.Name = "cb_xdry";
+            this.cb_xdry.Size = new System.Drawing.Size(72, 16);
+            this.cb_xdry.TabIndex = 92;
+            this.cb_xdry.Text = "吸毒人员";
+            this.cb_xdry.UseVisualStyleBackColor = true;
+            this.cb_xdry.CheckedChanged += new System.EventHandler(this.cb_xdry_CheckedChanged);
             // 
-            // button1
+            // save
             // 
-            this.button1.Location = new System.Drawing.Point(758, 694);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "添加";
-            this.button1.UseVisualStyleBackColor = true;
+            this.save.Location = new System.Drawing.Point(782, 669);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(75, 23);
+            this.save.TabIndex = 9;
+            this.save.Text = "保存";
+            this.save.UseVisualStyleBackColor = true;
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
-            // button2
+            // close
             // 
-            this.button2.Location = new System.Drawing.Point(882, 694);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "重置";
-            this.button2.UseVisualStyleBackColor = true;
+            this.close.Location = new System.Drawing.Point(876, 669);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(75, 23);
+            this.close.TabIndex = 10;
+            this.close.Text = "取消";
+            this.close.UseVisualStyleBackColor = true;
             // 
             // addUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1008, 699);
+            this.Controls.Add(this.close);
+            this.Controls.Add(this.save);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
@@ -1369,9 +1377,10 @@ namespace 草堂街道社会智能数据管理系统
             this.Name = "addUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "添加人员";
+            this.Load += new System.EventHandler(this.addUser_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ryinfo_age)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -1398,11 +1407,11 @@ namespace 草堂街道社会智能数据管理系统
         private Label label9;
         private Label label10;
         private Label label11;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private ComboBox comboBox3;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private ComboBox cb_district;
+        private ComboBox cb_grid;
+        private ComboBox cb_block;
+        private TextBox tb_names;
+        private TextBox ryinfo_card_id;
         private ComboBox comboBox4;
         private Label label4;
         private Label label5;
@@ -1411,109 +1420,109 @@ namespace 草堂街道社会智能数据管理系统
         private TextBox textBox3;
         private TextBox textBox5;
         private Label label6;
-        private TextBox textBox7;
+        private TextBox ryxx_p1;
         private Label label8;
         private TextBox textBox6;
         private Label label7;
         private Label label14;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown ryinfo_age;
         private CheckBox checkBox1;
-        private Label label12;
-        private TextBox textBox8;
-        private Label label13;
-        private CheckBox checkBox2;
-        private CheckBox checkBox3;
-        private Label label15;
+        private Label la_mz;
+        private TextBox tb_mz;
+        private Label la_jlsj;
+        private CheckBox cb_photo;
+        private CheckBox cb_zk;
+        private Label la_qfrq;
         private GroupBox groupBox2;
-        private Label label16;
-        private DateTimePicker dateTimePicker2;
-        private DateTimePicker dateTimePicker1;
-        private ComboBox comboBox5;
-        private TextBox textBox9;
-        private Label label17;
+        private Label la_hz;
+        private DateTimePicker dtp_qfrq;
+        private DateTimePicker dtp_jlsj;
+        private ComboBox cb_hz;
+        private TextBox tb_yhzgx;
+        private Label la_yhzgx;
         private GroupBox groupBox3;
-        private TextBox textBox10;
-        private Label label18;
+        private TextBox tb_xjdz;
+        private Label la_xjdz;
         private CheckBox checkBox5;
         private CheckBox checkBox4;
-        private CheckBox checkBox6;
-        private TextBox textBox15;
+        private CheckBox cb_handicapped;
+        private TextBox tb_gx;
         private Label label23;
-        private TextBox textBox14;
+        private TextBox tb_jkr;
         private Label label22;
-        private TextBox textBox13;
+        private TextBox tb_dj;
         private Label label21;
-        private TextBox textBox12;
+        private TextBox tb_hmz;
         private Label label20;
-        private TextBox textBox11;
+        private TextBox tb_cjz;
         private Label label19;
-        private ComboBox comboBox6;
+        private ComboBox cb_feature;
         private GroupBox groupBox4;
-        private TextBox textBox19;
-        private TextBox textBox18;
-        private CheckBox checkBox8;
-        private TextBox textBox23;
+        private TextBox ryxx_p3;
+        private TextBox ryxx_p2;
+        private CheckBox jwry_czjwr_cb;
+        private TextBox jwry_lxrdh_tb;
         private Label label32;
-        private TextBox textBox22;
+        private TextBox jwry_lxr_tb;
         private Label label31;
-        private TextBox textBox21;
+        private TextBox jwry_jdr_tb;
         private Label label30;
-        private ComboBox comboBox7;
+        private ComboBox jwry_f_cb;
         private Label label29;
-        private DateTimePicker dateTimePicker4;
+        private DateTimePicker jwry_lksj_dtp;
         private Label label28;
-        private DateTimePicker dateTimePicker3;
+        private DateTimePicker jyry_qzyxq_dtp;
         private Label label27;
-        private TextBox textBox20;
+        private TextBox jwry_qzlx_tb;
         private Label label26;
-        private TextBox textBox17;
+        private TextBox jwry_zjhm_tb;
         private Label label25;
-        private TextBox textBox16;
+        private TextBox jwry_gj_tb;
         private Label label24;
-        private CheckBox checkBox7;
+        private CheckBox cb_jwry;
         private GroupBox groupBox5;
-        private TextBox textBox24;
+        private TextBox dbry_id_tb;
         private Label label33;
-        private CheckBox checkBox9;
+        private CheckBox cb_dbry;
         private GroupBox groupBox6;
-        private TextBox textBox29;
+        private TextBox jzry_jxjy_tb;
         private Label label38;
-        private TextBox textBox28;
+        private TextBox jzry_jzlb_tb;
         private Label label37;
-        private TextBox textBox27;
+        private TextBox jzry_ypxq;
         private Label label36;
-        private TextBox textBox26;
+        private TextBox jzry_fzlx_tb;
         private Label label35;
-        private TextBox textBox25;
+        private TextBox jzry_zm_tb;
         private Label label34;
-        private CheckBox checkBox11;
+        private CheckBox cb_jzry;
         private GroupBox groupBox7;
-        private TextBox textBox30;
+        private TextBox xmsfry_fxjyhdq_tb;
         private Label label39;
         private Label label41;
-        private TextBox textBox33;
+        private TextBox xmsfry_zm_tb;
         private Label label42;
-        private CheckBox checkBox12;
-        private DateTimePicker dateTimePicker6;
+        private CheckBox cb_xfsfry;
+        private DateTimePicker jzry_jzqe_dtp;
         private Label label44;
-        private DateTimePicker dateTimePicker5;
-        private Label label43;
-        private DateTimePicker dateTimePicker9;
+        private DateTimePicker jzry_jzqs_dtp;
+        private Label jzry_jzqs;
+        private DateTimePicker xmsfry_sfsj_dtp;
         private Label label40;
-        private DateTimePicker dateTimePicker8;
+        private DateTimePicker xmsfry_zxqz_dtp;
         private Label label45;
-        private DateTimePicker dateTimePicker7;
+        private DateTimePicker xmsfry_zxqq_dtp;
         private GroupBox groupBox8;
-        private TextBox textBox34;
+        private TextBox xdry_ryxz_tb;
         private Label label49;
-        private TextBox textBox32;
+        private TextBox xdry_dplb_tb;
         private Label label48;
-        private DateTimePicker dateTimePicker10;
+        private DateTimePicker xdry_ccfxrq_dtp;
         private Label label47;
-        private TextBox textBox31;
+        private TextBox xdry_hjpcs_tb;
         private Label label46;
-        private CheckBox checkBox10;
-        private Button button1;
-        private Button button2;
+        private CheckBox cb_xdry;
+        private Button save;
+        private Button close;
     }
 }

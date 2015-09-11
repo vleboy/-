@@ -95,6 +95,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laResponsibleValue = new System.Windows.Forms.Label();
             this.laResponsibleTitle = new System.Windows.Forms.Label();
             this.laTitle = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,6 +103,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.laYardGroundValue4);
             this.groupBox1.Controls.Add(this.laYardGroundValue3);
             this.groupBox1.Controls.Add(this.laYardGroundValue2);
@@ -209,9 +211,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laDopeValue.Location = new System.Drawing.Point(902, 538);
             this.laDopeValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laDopeValue.Name = "laDopeValue";
-            this.laDopeValue.Size = new System.Drawing.Size(45, 25);
+            this.laDopeValue.Size = new System.Drawing.Size(23, 25);
             this.laDopeValue.TabIndex = 144;
-            this.laDopeValue.Text = "000";
+            this.laDopeValue.Text = "0";
             // 
             // laLowestPeopleValue
             // 
@@ -220,9 +222,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laLowestPeopleValue.Location = new System.Drawing.Point(902, 484);
             this.laLowestPeopleValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laLowestPeopleValue.Name = "laLowestPeopleValue";
-            this.laLowestPeopleValue.Size = new System.Drawing.Size(45, 25);
+            this.laLowestPeopleValue.Size = new System.Drawing.Size(23, 25);
             this.laLowestPeopleValue.TabIndex = 143;
-            this.laLowestPeopleValue.Text = "000";
+            this.laLowestPeopleValue.Text = "0";
             // 
             // laMentalValue
             // 
@@ -231,9 +233,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laMentalValue.Location = new System.Drawing.Point(902, 433);
             this.laMentalValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laMentalValue.Name = "laMentalValue";
-            this.laMentalValue.Size = new System.Drawing.Size(45, 25);
+            this.laMentalValue.Size = new System.Drawing.Size(23, 25);
             this.laMentalValue.TabIndex = 142;
-            this.laMentalValue.Text = "000";
+            this.laMentalValue.Text = "0";
             // 
             // laCommunistValue
             // 
@@ -242,9 +244,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laCommunistValue.Location = new System.Drawing.Point(902, 380);
             this.laCommunistValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laCommunistValue.Name = "laCommunistValue";
-            this.laCommunistValue.Size = new System.Drawing.Size(45, 25);
+            this.laCommunistValue.Size = new System.Drawing.Size(23, 25);
             this.laCommunistValue.TabIndex = 141;
-            this.laCommunistValue.Text = "000";
+            this.laCommunistValue.Text = "0";
             // 
             // laUnitValue
             // 
@@ -253,9 +255,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laUnitValue.Location = new System.Drawing.Point(902, 331);
             this.laUnitValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laUnitValue.Name = "laUnitValue";
-            this.laUnitValue.Size = new System.Drawing.Size(56, 25);
+            this.laUnitValue.Size = new System.Drawing.Size(34, 25);
             this.laUnitValue.TabIndex = 140;
-            this.laUnitValue.Text = "0000";
+            this.laUnitValue.Text = "28";
             // 
             // laUnemploymentValue
             // 
@@ -264,9 +266,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laUnemploymentValue.Location = new System.Drawing.Point(664, 538);
             this.laUnemploymentValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laUnemploymentValue.Name = "laUnemploymentValue";
-            this.laUnemploymentValue.Size = new System.Drawing.Size(45, 25);
+            this.laUnemploymentValue.Size = new System.Drawing.Size(23, 25);
             this.laUnemploymentValue.TabIndex = 139;
-            this.laUnemploymentValue.Text = "000";
+            this.laUnemploymentValue.Text = "0";
             // 
             // laLowestFmailyValue
             // 
@@ -275,9 +277,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laLowestFmailyValue.Location = new System.Drawing.Point(664, 484);
             this.laLowestFmailyValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laLowestFmailyValue.Name = "laLowestFmailyValue";
-            this.laLowestFmailyValue.Size = new System.Drawing.Size(45, 25);
+            this.laLowestFmailyValue.Size = new System.Drawing.Size(23, 25);
             this.laLowestFmailyValue.TabIndex = 138;
-            this.laLowestFmailyValue.Text = "000";
+            this.laLowestFmailyValue.Text = "0";
             // 
             // laHandicappedValue
             // 
@@ -286,20 +288,20 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laHandicappedValue.Location = new System.Drawing.Point(664, 433);
             this.laHandicappedValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laHandicappedValue.Name = "laHandicappedValue";
-            this.laHandicappedValue.Size = new System.Drawing.Size(45, 25);
+            this.laHandicappedValue.Size = new System.Drawing.Size(23, 25);
             this.laHandicappedValue.TabIndex = 137;
-            this.laHandicappedValue.Text = "000";
+            this.laHandicappedValue.Text = "0";
             // 
             // laMobilePopulationValue
             // 
             this.laMobilePopulationValue.AutoSize = true;
             this.laMobilePopulationValue.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laMobilePopulationValue.Location = new System.Drawing.Point(660, 380);
+            this.laMobilePopulationValue.Location = new System.Drawing.Point(664, 380);
             this.laMobilePopulationValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laMobilePopulationValue.Name = "laMobilePopulationValue";
-            this.laMobilePopulationValue.Size = new System.Drawing.Size(67, 25);
+            this.laMobilePopulationValue.Size = new System.Drawing.Size(23, 25);
             this.laMobilePopulationValue.TabIndex = 136;
-            this.laMobilePopulationValue.Text = "00000";
+            this.laMobilePopulationValue.Text = "0";
             // 
             // laHouseValue
             // 
@@ -308,9 +310,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laHouseValue.Location = new System.Drawing.Point(664, 330);
             this.laHouseValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laHouseValue.Name = "laHouseValue";
-            this.laHouseValue.Size = new System.Drawing.Size(45, 25);
+            this.laHouseValue.Size = new System.Drawing.Size(34, 25);
             this.laHouseValue.TabIndex = 135;
-            this.laHouseValue.Text = "000";
+            this.laHouseValue.Text = "12";
             // 
             // laDopeTitle
             // 
@@ -404,45 +406,45 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             // 
             this.laReleaseValue.AutoSize = true;
             this.laReleaseValue.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laReleaseValue.Location = new System.Drawing.Point(425, 589);
+            this.laReleaseValue.Location = new System.Drawing.Point(422, 589);
             this.laReleaseValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laReleaseValue.Name = "laReleaseValue";
-            this.laReleaseValue.Size = new System.Drawing.Size(45, 25);
+            this.laReleaseValue.Size = new System.Drawing.Size(23, 25);
             this.laReleaseValue.TabIndex = 126;
-            this.laReleaseValue.Text = "000";
+            this.laReleaseValue.Text = "0";
             // 
             // laEmphasisValue
             // 
             this.laEmphasisValue.AutoSize = true;
             this.laEmphasisValue.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laEmphasisValue.Location = new System.Drawing.Point(425, 538);
+            this.laEmphasisValue.Location = new System.Drawing.Point(422, 538);
             this.laEmphasisValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laEmphasisValue.Name = "laEmphasisValue";
-            this.laEmphasisValue.Size = new System.Drawing.Size(45, 25);
+            this.laEmphasisValue.Size = new System.Drawing.Size(23, 25);
             this.laEmphasisValue.TabIndex = 125;
-            this.laEmphasisValue.Text = "000";
+            this.laEmphasisValue.Text = "0";
             // 
             // laForeignerValue
             // 
             this.laForeignerValue.AutoSize = true;
             this.laForeignerValue.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laForeignerValue.Location = new System.Drawing.Point(425, 484);
+            this.laForeignerValue.Location = new System.Drawing.Point(422, 484);
             this.laForeignerValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laForeignerValue.Name = "laForeignerValue";
-            this.laForeignerValue.Size = new System.Drawing.Size(45, 25);
+            this.laForeignerValue.Size = new System.Drawing.Size(23, 25);
             this.laForeignerValue.TabIndex = 124;
-            this.laForeignerValue.Text = "000";
+            this.laForeignerValue.Text = "0";
             // 
             // laAloneOlderValue
             // 
             this.laAloneOlderValue.AutoSize = true;
             this.laAloneOlderValue.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laAloneOlderValue.Location = new System.Drawing.Point(425, 433);
+            this.laAloneOlderValue.Location = new System.Drawing.Point(422, 433);
             this.laAloneOlderValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laAloneOlderValue.Name = "laAloneOlderValue";
-            this.laAloneOlderValue.Size = new System.Drawing.Size(45, 25);
+            this.laAloneOlderValue.Size = new System.Drawing.Size(23, 25);
             this.laAloneOlderValue.TabIndex = 123;
-            this.laAloneOlderValue.Text = "000";
+            this.laAloneOlderValue.Text = "0";
             // 
             // laFamilyPopulationValue
             // 
@@ -451,9 +453,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laFamilyPopulationValue.Location = new System.Drawing.Point(422, 380);
             this.laFamilyPopulationValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laFamilyPopulationValue.Name = "laFamilyPopulationValue";
-            this.laFamilyPopulationValue.Size = new System.Drawing.Size(67, 25);
+            this.laFamilyPopulationValue.Size = new System.Drawing.Size(23, 25);
             this.laFamilyPopulationValue.TabIndex = 122;
-            this.laFamilyPopulationValue.Text = "00000";
+            this.laFamilyPopulationValue.Text = "0";
             // 
             // laMobilePopulationTtile
             // 
@@ -561,9 +563,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laCorrectValue.Location = new System.Drawing.Point(185, 589);
             this.laCorrectValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laCorrectValue.Name = "laCorrectValue";
-            this.laCorrectValue.Size = new System.Drawing.Size(45, 25);
+            this.laCorrectValue.Size = new System.Drawing.Size(23, 25);
             this.laCorrectValue.TabIndex = 112;
-            this.laCorrectValue.Text = "000";
+            this.laCorrectValue.Text = "0";
             // 
             // laCleanerValue
             // 
@@ -572,9 +574,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laCleanerValue.Location = new System.Drawing.Point(185, 538);
             this.laCleanerValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laCleanerValue.Name = "laCleanerValue";
-            this.laCleanerValue.Size = new System.Drawing.Size(45, 25);
+            this.laCleanerValue.Size = new System.Drawing.Size(23, 25);
             this.laCleanerValue.TabIndex = 111;
-            this.laCleanerValue.Text = "000";
+            this.laCleanerValue.Text = "0";
             // 
             // laPriorityValue
             // 
@@ -583,9 +585,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laPriorityValue.Location = new System.Drawing.Point(185, 484);
             this.laPriorityValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laPriorityValue.Name = "laPriorityValue";
-            this.laPriorityValue.Size = new System.Drawing.Size(45, 25);
+            this.laPriorityValue.Size = new System.Drawing.Size(23, 25);
             this.laPriorityValue.TabIndex = 110;
-            this.laPriorityValue.Text = "000";
+            this.laPriorityValue.Text = "0";
             // 
             // laOlderValue
             // 
@@ -594,9 +596,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laOlderValue.Location = new System.Drawing.Point(185, 433);
             this.laOlderValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laOlderValue.Name = "laOlderValue";
-            this.laOlderValue.Size = new System.Drawing.Size(56, 25);
+            this.laOlderValue.Size = new System.Drawing.Size(23, 25);
             this.laOlderValue.TabIndex = 109;
-            this.laOlderValue.Text = "0000";
+            this.laOlderValue.Text = "0";
             // 
             // laCommunityPopulationValue
             // 
@@ -605,9 +607,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laCommunityPopulationValue.Location = new System.Drawing.Point(185, 380);
             this.laCommunityPopulationValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laCommunityPopulationValue.Name = "laCommunityPopulationValue";
-            this.laCommunityPopulationValue.Size = new System.Drawing.Size(67, 25);
+            this.laCommunityPopulationValue.Size = new System.Drawing.Size(23, 25);
             this.laCommunityPopulationValue.TabIndex = 108;
-            this.laCommunityPopulationValue.Text = "00000";
+            this.laCommunityPopulationValue.Text = "0";
             // 
             // laYardValue
             // 
@@ -616,9 +618,9 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laYardValue.Location = new System.Drawing.Point(185, 330);
             this.laYardValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laYardValue.Name = "laYardValue";
-            this.laYardValue.Size = new System.Drawing.Size(56, 25);
+            this.laYardValue.Size = new System.Drawing.Size(23, 25);
             this.laYardValue.TabIndex = 107;
-            this.laYardValue.Text = "0000";
+            this.laYardValue.Text = "4";
             // 
             // laCorrectTitle
             // 
@@ -818,6 +820,17 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laTitle.Text = "草堂路第一网格汇总表";
             this.laTitle.Click += new System.EventHandler(this.laTitle_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(422, 328);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 25);
+            this.label1.TabIndex = 148;
+            this.label1.Text = "0";
+            // 
             // ListCtlNetForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -897,5 +910,6 @@ namespace 草堂街道社会智能数据管理系统.草堂路
         private Label laYardGroundValue3;
         private Label laYardGroundValue2;
         private Label laYardGroundValue4;
+        private Label label1;
     }
 }

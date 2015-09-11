@@ -70,6 +70,7 @@
       <DependentUpon>addUser.cs</DependentUpon>
     </Compile>
     <Compile Include="ComClass\CommonUse.cs" />
+    <Compile Include="ComClass\item.cs" />
     <Compile Include="ComClass\MySqlHelper.cs" />
     <Compile Include="ComClass\OperatorFile.cs" />
     <Compile Include="ComClass\PropetyClass.cs" />
