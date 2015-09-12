@@ -25,11 +25,11 @@ namespace 草堂街道社会智能数据管理系统
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
+            if (cb_czrk.Checked)
             {
                 feature += 1;
                 cb_photo.Enabled = true;
-                cb_hz.Enabled = true;
+                cb_hzzz.Enabled = true;
                 cb_zk.Enabled = true;
                 tb_mz.Enabled = true;
                 tb_xjdz.Enabled = true;
@@ -41,7 +41,7 @@ namespace 草堂街道社会智能数据管理系统
             {
                 feature -= 1;
                 cb_photo.Enabled = false;
-                cb_hz.Enabled = false;
+                cb_hzzz.Enabled = false;
                 cb_zk.Enabled = false;
                 tb_mz.Enabled = false;
                 tb_xjdz.Enabled = false;
@@ -90,7 +90,8 @@ namespace 草堂街道社会智能数据管理系统
                 jwry_lxr_tb.Enabled = true;
                 jwry_qzlx_tb.Enabled = true;
                 jwry_zjhm_tb.Enabled = true;
-                jyry_qzyxq_dtp.Enabled = true;
+                jwry_qzyxq_dtp.Enabled = true;
+                jwry_zjyxq_dtp.Enabled = true;
 
             }
             else
@@ -105,7 +106,8 @@ namespace 草堂街道社会智能数据管理系统
                 jwry_lxr_tb.Enabled = false;
                 jwry_qzlx_tb.Enabled = false;
                 jwry_zjhm_tb.Enabled = false;
-                jyry_qzyxq_dtp.Enabled = false;
+                jwry_qzyxq_dtp.Enabled = false;
+                jwry_zjyxq_dtp.Enabled = false;
             }
         }
 
@@ -197,18 +199,182 @@ namespace 草堂街道社会智能数据管理系统
                 xdry_ryxz_tb.Enabled = false;
             }
         }
-      
+        // INSERT INTO `population` (`card_id`, `name`, `age`, `address`, `gender`, `census_address`, `block`, `note`, `educational`) VALUES('1', '1', '1', '1', '1', '1', '1', '1', '1')
+        private string rebool(string str1, string str2)
+        {
+            string bools = string.Empty;
+            return  bools = (str1 == str2) ? "1" : "0";
+        }
         private void save_Click(object sender, EventArgs e)
         {
+            string sid = string.Empty;
             string strcmd = string.Empty;
+            string strform = " INSERT INTO `features` (";
+            string strobj = ") VALUES(";
+            Dictionary<string,string> fid = new Dictionary<string,string>();
+            List<string> l_strform = new List<string>();
+            List<string> l_strobj = new List<string>();
             if (feature != 0)
             {
-                //先创建特性属性
+
+                //常住人员特性添加
+                if (cb_czrk.Checked)
+                {
+                    if (tb_xjdz.Text.Trim() != "")//添加常住地址
+                    {
+
+                        strcmd = "INSERT INTO `residentaddresss` (`address`, `host`, `relationship`) VALUES ('" +
+                            tb_xjdz.Text.Trim() + "','" + rebool(cb_hzzz.SelectedItem.ToString(), "是") + "', '" + tb_yhzgx.Text.Trim() + "')" + ";select @@identity AS id";
+                        var id = db.GetSingleObject(strcmd);
+                        sid = id.ToString();
+
+                    }
+                    //常住人员特性添加
+                    strcmd = "INSERT INTO `resident` (`ethnic`, `now_date`, `registration_date`, `photo`, `tenants`, `resident_addresss`) VALUES ('" +
+                        tb_mz.Text.Trim() + "', '" + dtp_jlsj.Text.ToString() + "', '" + dtp_qfrq.Text.ToString() + "', '" + rebool(cb_photo.Checked.ToString(), "True") + "', '" + rebool(cb_zk.Checked.ToString(), "True") + "', '" +
+                       sid + "')" + "; select @@identity AS id";
+                    sid = db.GetSingleObject(strcmd).ToString();
+                    fid.Add("resident", sid);
+                }
+                //残疾人特性添加
+                if (cb_handicapped.Checked)
+                {
+                    strcmd = "INSERT INTO `handicapped` (`ethnic`, `handicapped_id`, `handicapped_type`, `handicapped_level`, `guardian_name`, `guardian_relationship`) VALUES ('" +
+                          tb_hmz.Text.Trim() + "', '" + tb_cjz.Text.Trim() + "', '" + rebool(cb_feature.SelectedItem.ToString(), "肢体") + "', '" + tb_dj.Text.Trim() + "', '" + tb_jkr.Text.Trim() + "', '" + tb_gx.Text.Trim() + "')" + "; select @@identity AS id"; ;
+                    sid = db.GetSingleObject(strcmd).ToString();
+                    fid.Add("handicapped", sid);
+                }
+                //境外人员添加
+                if (cb_jwry.Checked)
+                {
+                    strcmd = "INSERT INTO `foreigner` (`citizenship`, `card_id`, `card_date`, `card_type`, "
+                        + "`house_belongs`, `registration_date`, `contact`, `associates`, `associates_phone`, `isforever`, `leave_date`) VALUES ('" +
+                       jwry_gj_tb.Text.Trim() + "', '" + jwry_zjhm_tb.Text.Trim() + "', '" + jwry_zjyxq_dtp.Text.ToString() + "', '" + jwry_qzlx_tb.Text.Trim() + "', '" +
+                       jwry_f_cb.SelectedItem.ToString() + "', '" + jwry_qzyxq_dtp.Text.ToString() + "', '" + jwry_jdr_tb.Text.Trim() + "', '" + jwry_lxr_tb.Text.Trim() + "', '" +
+                       jwry_lxrdh_tb.Text.Trim() + "', '" + rebool(jwry_czjwr_cb.Checked.ToString(), "True") + "', '" + jwry_lksj_dtp.Text.ToString() + "')" + "; select @@identity AS id";
+                    sid = db.GetSingleObject(strcmd).ToString();
+                    fid.Add("foreigner", sid);
+                }
+                //低保人员添加
+                if (cb_dbry.Checked)
+                {
+                    strcmd = "INSERT INTO `poor` (`poorid`) VALUES ('" + dbry_id_tb.Text.Trim() + "')" + "; select @@identity AS id"; ;
+                    sid = db.GetSingleObject(strcmd).ToString();
+                    fid.Add("poor", sid);
+                }
+
+                //校正人员添加
+                if (cb_jzry.Checked)
+                {
+                    strcmd = "INSERT INTO `correction` (`criminal`, `criminal_type`, `criminal_period`, `correction_firstdate`, `correction_enddate`, `correction_type`, `school_or_job`) VALUES ('" +
+                        jzry_zm_tb.Text.Trim() + "', '" + jzry_fzlx_tb.Text.Trim() + "', '" + jzry_ypxq.Text.Trim() + "', '" + jzry_jzqs_dtp.Text.ToString() + "', '" + jzry_jzqe_dtp.Text.ToString() + "', '" +
+                        jzry_jzlb_tb.Text.Trim() + "', '" + jzry_jxjy_tb.Text.Trim() + "')" + "; select @@identity AS id";
+                    sid = db.GetSingleObject(strcmd).ToString();
+                    fid.Add("correction", sid);
+                }
+                //刑满释放人员添加
+                if (cb_xfsfry.Checked)
+                {
+                    strcmd = "INSERT INTO `released` (`criminal`, `criminal_start_date`, `criminal_end_date`, `prison_address`, `free_date`) VALUES ('" +
+                        xmsfry_zm_tb.Text.Trim() + "', '" + xmsfry_zxqq_dtp.Text.ToString() + "', '" + xmsfry_zxqz_dtp.Text.ToString() + "', '" + xmsfry_fxjyhdq_tb.Text.Trim() + "', '" + xmsfry_sfsj_dtp.Text.ToString() + "')" + "; select @@identity AS id";
+                    sid = db.GetSingleObject(strcmd).ToString();
+                    fid.Add("released", sid);
+                }
+                //吸毒人员添加
+                if (cb_xdry.Checked)
+                {
+                    strcmd = "INSERT INTO `dope` (`police_address`, `first_date`, `dope_type`, `status`) VALUES ('" + xdry_hjpcs_tb.Text.Trim() + "', '" + xdry_ccfxrq_dtp.Text.ToString() + "', '" + xdry_dplb_tb.Text.Trim() + "', '" + xdry_ryxz_tb.Text.Trim() + "')" + "; select @@identity AS id";
+                    sid = db.GetSingleObject(strcmd).ToString();
+                    fid.Add("dope", sid);
+                }
+                //失业人员添加
+                if (cb_unjob.Checked)
+                {
+                    strcmd = "INSERT INTO `unjob` (`insurance_id`, `first_month`, `old_factory`, `already`) VALUES ('" + unjob_id_tb.Text.Trim() + "', '" + unjob_firstmonth_dtp.Text.ToString() + "', '" + unjob_job.Text.Trim() + "', '" + unjob_time.Text.Trim() + "')" + "; select @@identity AS id";
+                    sid = db.GetSingleObject(strcmd).ToString();
+                    fid.Add("unjob", sid);
+                }
+                if (cb_old.Checked)
+                {
+                    l_strform.Add("`old`");
+                    l_strobj.Add("1");
+                    if (cb_alone.Checked)
+                    {
+                        l_strform.Add("`old_alone`");
+                        l_strobj.Add("1");
+                    }
+                }
+                if (cb_clear.Checked)
+                {
+                    l_strform.Add("`cleaner`");
+                    l_strobj.Add("1");
+                }
+                if (cb_vip.Checked)
+                {
+                    l_strform.Add("`vip`");
+                    l_strobj.Add("1");
+
+                }
+                if (fid != null)
+                {
+                   
+                    foreach (var item in fid)
+                    {
+                        l_strform.Add("`"+ item.Key + "`");
+                        l_strobj.Add( item.Value );
+
+                    }
+                }
+                string[] l_stoform = l_strform.ToArray();
+                string[] l_stobj = l_strobj.ToArray();
+                strform += string.Join(",", l_stoform);
+                strobj += string.Join(",", l_stobj);
+
+                //  strcmd = strform + strobj;
+               
+                strcmd = strform.TrimEnd(',') + strobj.TrimEnd(',');
+                strcmd += ")" + "; select @@identity AS id";
+                //查找其他特性
+                //查找是否有电话号码？INSERT INTO `features` (`vip`, `cleaner`, `old`, `old_alone`) VALUES ('1', '1', '1', '1')
+                //查找是否是老人
+                //查找老人是否是alone
+                sid = db.GetSingleObject(strcmd).ToString();
             }
-            strcmd = "INSERT INTO `population` (`card_id`, `name`, `age`, `address`, `gender`, `census_address`, `block`, `note`, `educational`) VALUES('"+ ryinfo_card_id.Text + "', '"+ tb_names.Text + "', '"+ryinfo_age.Value.ToString()+"', '1', '1', '1', '1', '1', '1')";
-            // INSERT INTO `population` (`card_id`, `name`, `age`, `address`, `gender`, `census_address`, `block`, `note`, `educational`) VALUES('1', '1', '1', '1', '1', '1', '1', '1', '1')
+          
+            item block = (item)cb_block.SelectedItem;
+            if (sid == "" || sid == "0")
+            {
+                strcmd = "INSERT INTO `population` (`card_id`, `name`, `age`, `address`, `gender`, `census_address`, `block`, `note`, `educational`) VALUES('" + ryinfo_card_id.Text + "', '" + tb_names.Text + "', '" + ryinfo_age.Value.ToString() + "', '" + ryinfo_address.Text + "', '" + rebool(ryinfo_sex.SelectedItem.ToString(), "男") + "', '" + ryinfo_hjdz.Text + "', '" + block.Value + "', '" + ryinfo_note.Text + "', '" + ryinfo_edu.Text + "')" + "; select @@identity AS id";
+            }
+            else
+            {
+                strcmd = "INSERT INTO `population` (`card_id`, `name`, `age`, `address`, `gender`, `census_address`, `block`, `note`, `educational`,`features`) VALUES('" + ryinfo_card_id.Text + "', '" + tb_names.Text + "', '" + ryinfo_age.Value.ToString() + "', '" + ryinfo_address.Text + "', '" + rebool(ryinfo_sex.SelectedItem.ToString(), "男") + "', '" + ryinfo_hjdz.Text + "', '" + block.Value + "', '" + ryinfo_note.Text + "', '" + ryinfo_edu.Text + "','" + sid + "')" + "; select @@identity AS id";
+            }
+            
+            
+            sid = db.GetSingleObject(strcmd).ToString();
+           
+            if (ryxx_p1.Text != "")
+            {
+                strcmd = " INSERT INTO `phone` (`phonenumber`, `population`) VALUES('" + ryxx_p1.Text.Trim()+ "', '"+sid+"')" + "; select @@identity AS id";
+                db.GetSingleObject(strcmd).ToString();
+            }
+            if (ryxx_p2.Text != "")
+            {
+                strcmd = " INSERT INTO `phone` (`phonenumber`, `population`) VALUES('" + ryxx_p2.Text.Trim() + "', '" + sid + "')" + "; select @@identity AS id";
+                db.GetSingleObject(strcmd).ToString();
+            }
+            if (ryxx_p3.Text != "")
+            {
+                strcmd = " INSERT INTO `phone` (`phonenumber`, `population`) VALUES('" + ryxx_p3.Text.Trim() + "', '" + sid + "')" + "; select @@identity AS id";
+                db.GetSingleObject(strcmd).ToString();
+            }
+
             feature = 0;
         }
+
+      
+
 
         private void addUser_Load(object sender, EventArgs e)
         {
@@ -221,7 +387,7 @@ namespace 草堂街道社会智能数据管理系统
                 items.Add(it);
             }
             cb_district.DataSource = items;
-            items.Clear();
+         //   items.Clear();
             sdr.Close();
             sdr = db.GetDataReader("SELECT 	grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = 1");
             while (sdr.Read())
@@ -230,7 +396,7 @@ namespace 草堂街道社会智能数据管理系统
                 items.Add(it);
             }
             cb_grid.DataSource = items;
-            items.Clear();
+          //  items.Clear();
             sdr.Close();
             sdr = db.GetDataReader("SELECT 	block.`name`,block.id FROM grid INNER JOIN block ON block.grid = grid.id WHERE grid.id = 1");
             while (sdr.Read())
@@ -239,8 +405,100 @@ namespace 草堂街道社会智能数据管理系统
                 items.Add(it);
             }
             cb_block.DataSource = items;
-            items.Clear();
+          //  items.Clear();
             sdr.Close();
+        }
+
+        private void cb_district_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+            
+        }
+
+        private void cb_grid_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void cb_grid_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+       
+                string index = null;
+                List<item> items = new List<item>();
+                MySqlDataReader sdr;
+                item it = (item)cb_grid.SelectedItem;
+                index = it.Value;
+                sdr = db.GetDataReader("SELECT 	block.`name`,block.id FROM grid INNER JOIN block ON block.grid = grid.id WHERE grid.id = " + index);
+                while (sdr.Read())
+                {
+                    item its = new item(sdr[0].ToString(), sdr[1].ToString());
+                    items.Add(its);
+                }
+            sdr.Close();
+            cb_block.DataSource = items;
+           // cb_grid.Text = sdr[0].ToString();
+              //  items.Clear();
+                
+            
+
+        }
+
+        private void cb_district_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            string index = null;
+            List<item> items = new List<item>();
+            MySqlDataReader sdr;
+            item it = (item)cb_district.SelectedItem;
+            index = it.Value;
+            sdr = db.GetDataReader("SELECT 	grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = " + index);
+            while (sdr.Read())
+            {
+                item its = new item(sdr[0].ToString(), sdr[1].ToString());
+                items.Add(its);
+            }
+            sdr.Close();
+            cb_grid.DataSource = items;
+           // cb_district.Text = sdr[0].ToString();
+           // items.Clear();
+            
+           
+        }
+
+        private void cb_old_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_old.Checked)
+            {
+                feature += 1;
+                cb_alone.Enabled = true;
+            }
+            else
+            {
+                feature -= 1;
+                cb_alone.Enabled = false;
+            }
+        }
+
+        private void cb_unjob_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_unjob.Checked)
+            {
+                feature += 1;
+                unjob_firstmonth_dtp.Enabled = true;
+                unjob_id_tb.Enabled = true;
+                unjob_job.Enabled = true;
+                unjob_time.Enabled = true;
+                unjob_time_Title.Enabled = true;
+            }
+            else
+            {
+                feature -= 1;
+                unjob_firstmonth_dtp.Enabled = false;
+                unjob_id_tb.Enabled = false;
+                unjob_job.Enabled = false;
+                unjob_time.Enabled = false;
+                unjob_time_Title.Enabled = false;
+            }
         }
     }
 }
