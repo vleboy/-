@@ -34,8 +34,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListCtlNetForm1));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.gb1 = new System.Windows.Forms.GroupBox();
             this.laYardGroundValue4 = new System.Windows.Forms.Label();
             this.laYardGroundValue3 = new System.Windows.Forms.Label();
             this.laYardGroundValue2 = new System.Windows.Forms.Label();
@@ -63,7 +62,6 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laAloneOlderValue = new System.Windows.Forms.Label();
             this.laFamilyPopulationValue = new System.Windows.Forms.Label();
             this.laMobilePopulationTtile = new System.Windows.Forms.Label();
-            this.laFamilyValue = new System.Windows.Forms.Label();
             this.laHouseTitle = new System.Windows.Forms.Label();
             this.laReleaseTitle = new System.Windows.Forms.Label();
             this.laEmphasisTitle = new System.Windows.Forms.Label();
@@ -96,90 +94,79 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laResponsibleValue = new System.Windows.Forms.Label();
             this.laResponsibleTitle = new System.Windows.Forms.Label();
             this.laTitle = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.laFamilyValue = new System.Windows.Forms.Label();
+            this.gb1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gb1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.laYardGroundValue4);
-            this.groupBox1.Controls.Add(this.laYardGroundValue3);
-            this.groupBox1.Controls.Add(this.laYardGroundValue2);
-            this.groupBox1.Controls.Add(this.laDopeValue);
-            this.groupBox1.Controls.Add(this.laLowestPeopleValue);
-            this.groupBox1.Controls.Add(this.laMentalValue);
-            this.groupBox1.Controls.Add(this.laCommunistValue);
-            this.groupBox1.Controls.Add(this.laUnitValue);
-            this.groupBox1.Controls.Add(this.laUnemploymentValue);
-            this.groupBox1.Controls.Add(this.laLowestFmailyValue);
-            this.groupBox1.Controls.Add(this.laHandicappedValue);
-            this.groupBox1.Controls.Add(this.laMobilePopulationValue);
-            this.groupBox1.Controls.Add(this.laHouseValue);
-            this.groupBox1.Controls.Add(this.laDopeTitle);
-            this.groupBox1.Controls.Add(this.laLowestPeopleTitle);
-            this.groupBox1.Controls.Add(this.laMentalTitle);
-            this.groupBox1.Controls.Add(this.laUnitTitle);
-            this.groupBox1.Controls.Add(this.laCommunistTitle);
-            this.groupBox1.Controls.Add(this.laUnemploymentTitle);
-            this.groupBox1.Controls.Add(this.laLowestFmailyTitle);
-            this.groupBox1.Controls.Add(this.laHandicappedTitle);
-            this.groupBox1.Controls.Add(this.laReleaseValue);
-            this.groupBox1.Controls.Add(this.laEmphasisValue);
-            this.groupBox1.Controls.Add(this.laForeignerValue);
-            this.groupBox1.Controls.Add(this.laAloneOlderValue);
-            this.groupBox1.Controls.Add(this.laFamilyPopulationValue);
-            this.groupBox1.Controls.Add(this.laMobilePopulationTtile);
-            this.groupBox1.Controls.Add(this.laFamilyValue);
-            this.groupBox1.Controls.Add(this.laHouseTitle);
-            this.groupBox1.Controls.Add(this.laReleaseTitle);
-            this.groupBox1.Controls.Add(this.laEmphasisTitle);
-            this.groupBox1.Controls.Add(this.laForeignerTitle);
-            this.groupBox1.Controls.Add(this.laAloneOlderTitle);
-            this.groupBox1.Controls.Add(this.laFamilyPopulationTtile);
-            this.groupBox1.Controls.Add(this.laFamilyTitle);
-            this.groupBox1.Controls.Add(this.laCorrectValue);
-            this.groupBox1.Controls.Add(this.laCleanerValue);
-            this.groupBox1.Controls.Add(this.laPriorityValue);
-            this.groupBox1.Controls.Add(this.laOlderValue);
-            this.groupBox1.Controls.Add(this.laCommunityPopulationValue);
-            this.groupBox1.Controls.Add(this.laYardValue);
-            this.groupBox1.Controls.Add(this.laCorrectTitle);
-            this.groupBox1.Controls.Add(this.laCleanerTitle);
-            this.groupBox1.Controls.Add(this.laPriorityTitle);
-            this.groupBox1.Controls.Add(this.laOlderTitle);
-            this.groupBox1.Controls.Add(this.laCommunityPopulationTitle);
-            this.groupBox1.Controls.Add(this.laYardTitle);
-            this.groupBox1.Controls.Add(this.laYardGroundValue1);
-            this.groupBox1.Controls.Add(this.laYardGroundTitle);
-            this.groupBox1.Controls.Add(this.laPolicePhoneValue);
-            this.groupBox1.Controls.Add(this.laPolicePhoneTitle);
-            this.groupBox1.Controls.Add(this.laPoliceValue);
-            this.groupBox1.Controls.Add(this.laPoliceTitle);
-            this.groupBox1.Controls.Add(this.laResponsiblePhoneValue);
-            this.groupBox1.Controls.Add(this.laResponsiblePhoneTitle);
-            this.groupBox1.Controls.Add(this.laResponsibleTelValue);
-            this.groupBox1.Controls.Add(this.laResponsibleTelTitle);
-            this.groupBox1.Controls.Add(this.laResponsibleValue);
-            this.groupBox1.Controls.Add(this.laResponsibleTitle);
-            this.groupBox1.Controls.Add(this.laTitle);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(984, 705);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(422, 328);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 25);
-            this.label1.TabIndex = 148;
-            this.label1.Text = "0";
+            this.gb1.BackColor = System.Drawing.Color.White;
+            this.gb1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gb1.BackgroundImage")));
+            this.gb1.Controls.Add(this.laFamilyValue);
+            this.gb1.Controls.Add(this.laYardGroundValue4);
+            this.gb1.Controls.Add(this.laYardGroundValue3);
+            this.gb1.Controls.Add(this.laYardGroundValue2);
+            this.gb1.Controls.Add(this.laDopeValue);
+            this.gb1.Controls.Add(this.laLowestPeopleValue);
+            this.gb1.Controls.Add(this.laMentalValue);
+            this.gb1.Controls.Add(this.laCommunistValue);
+            this.gb1.Controls.Add(this.laUnitValue);
+            this.gb1.Controls.Add(this.laUnemploymentValue);
+            this.gb1.Controls.Add(this.laLowestFmailyValue);
+            this.gb1.Controls.Add(this.laHandicappedValue);
+            this.gb1.Controls.Add(this.laMobilePopulationValue);
+            this.gb1.Controls.Add(this.laHouseValue);
+            this.gb1.Controls.Add(this.laDopeTitle);
+            this.gb1.Controls.Add(this.laLowestPeopleTitle);
+            this.gb1.Controls.Add(this.laMentalTitle);
+            this.gb1.Controls.Add(this.laUnitTitle);
+            this.gb1.Controls.Add(this.laCommunistTitle);
+            this.gb1.Controls.Add(this.laUnemploymentTitle);
+            this.gb1.Controls.Add(this.laLowestFmailyTitle);
+            this.gb1.Controls.Add(this.laHandicappedTitle);
+            this.gb1.Controls.Add(this.laReleaseValue);
+            this.gb1.Controls.Add(this.laEmphasisValue);
+            this.gb1.Controls.Add(this.laForeignerValue);
+            this.gb1.Controls.Add(this.laAloneOlderValue);
+            this.gb1.Controls.Add(this.laFamilyPopulationValue);
+            this.gb1.Controls.Add(this.laMobilePopulationTtile);
+            this.gb1.Controls.Add(this.laHouseTitle);
+            this.gb1.Controls.Add(this.laReleaseTitle);
+            this.gb1.Controls.Add(this.laEmphasisTitle);
+            this.gb1.Controls.Add(this.laForeignerTitle);
+            this.gb1.Controls.Add(this.laAloneOlderTitle);
+            this.gb1.Controls.Add(this.laFamilyPopulationTtile);
+            this.gb1.Controls.Add(this.laFamilyTitle);
+            this.gb1.Controls.Add(this.laCorrectValue);
+            this.gb1.Controls.Add(this.laCleanerValue);
+            this.gb1.Controls.Add(this.laPriorityValue);
+            this.gb1.Controls.Add(this.laOlderValue);
+            this.gb1.Controls.Add(this.laCommunityPopulationValue);
+            this.gb1.Controls.Add(this.laYardValue);
+            this.gb1.Controls.Add(this.laCorrectTitle);
+            this.gb1.Controls.Add(this.laCleanerTitle);
+            this.gb1.Controls.Add(this.laPriorityTitle);
+            this.gb1.Controls.Add(this.laOlderTitle);
+            this.gb1.Controls.Add(this.laCommunityPopulationTitle);
+            this.gb1.Controls.Add(this.laYardTitle);
+            this.gb1.Controls.Add(this.laYardGroundValue1);
+            this.gb1.Controls.Add(this.laYardGroundTitle);
+            this.gb1.Controls.Add(this.laPolicePhoneValue);
+            this.gb1.Controls.Add(this.laPolicePhoneTitle);
+            this.gb1.Controls.Add(this.laPoliceValue);
+            this.gb1.Controls.Add(this.laPoliceTitle);
+            this.gb1.Controls.Add(this.laResponsiblePhoneValue);
+            this.gb1.Controls.Add(this.laResponsiblePhoneTitle);
+            this.gb1.Controls.Add(this.laResponsibleTelValue);
+            this.gb1.Controls.Add(this.laResponsibleTelTitle);
+            this.gb1.Controls.Add(this.laResponsibleValue);
+            this.gb1.Controls.Add(this.laResponsibleTitle);
+            this.gb1.Controls.Add(this.laTitle);
+            this.gb1.Location = new System.Drawing.Point(12, 12);
+            this.gb1.Name = "gb1";
+            this.gb1.Size = new System.Drawing.Size(984, 705);
+            this.gb1.TabIndex = 0;
+            this.gb1.TabStop = false;
             // 
             // laYardGroundValue4
             // 
@@ -203,6 +190,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laYardGroundValue3.TabIndex = 146;
             this.laYardGroundValue3.Tag = "113";
             this.laYardGroundValue3.Text = "青华路49号";
+            this.laYardGroundValue3.Click += new System.EventHandler(this.laYardGroundValue3_Click);
             // 
             // laYardGroundValue2
             // 
@@ -214,6 +202,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laYardGroundValue2.TabIndex = 145;
             this.laYardGroundValue2.Tag = "112";
             this.laYardGroundValue2.Text = "青华路27号";
+            this.laYardGroundValue2.Click += new System.EventHandler(this.laYardGroundValue2_Click);
             // 
             // laDopeValue
             // 
@@ -345,6 +334,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laLowestPeopleTitle.Name = "laLowestPeopleTitle";
             this.laLowestPeopleTitle.Size = new System.Drawing.Size(107, 25);
             this.laLowestPeopleTitle.TabIndex = 133;
+            this.laLowestPeopleTitle.Tag = "10109";
             this.laLowestPeopleTitle.Text = "低保人员：";
             // 
             // laMentalTitle
@@ -356,6 +346,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laMentalTitle.Name = "laMentalTitle";
             this.laMentalTitle.Size = new System.Drawing.Size(107, 25);
             this.laMentalTitle.TabIndex = 132;
+            this.laMentalTitle.Tag = "10105";
             this.laMentalTitle.Text = "精神残疾：";
             // 
             // laUnitTitle
@@ -378,6 +369,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laCommunistTitle.Name = "laCommunistTitle";
             this.laCommunistTitle.Size = new System.Drawing.Size(69, 25);
             this.laCommunistTitle.TabIndex = 130;
+            this.laCommunistTitle.Tag = "m10101";
             this.laCommunistTitle.Text = "党员：";
             this.laCommunistTitle.Click += new System.EventHandler(this.laCommunistTitle_Click);
             // 
@@ -401,6 +393,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laLowestFmailyTitle.Name = "laLowestFmailyTitle";
             this.laLowestFmailyTitle.Size = new System.Drawing.Size(107, 25);
             this.laLowestFmailyTitle.TabIndex = 128;
+            this.laLowestFmailyTitle.Tag = "10108";
             this.laLowestFmailyTitle.Text = "低保户数：";
             // 
             // laHandicappedTitle
@@ -412,6 +405,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laHandicappedTitle.Name = "laHandicappedTitle";
             this.laHandicappedTitle.Size = new System.Drawing.Size(88, 25);
             this.laHandicappedTitle.TabIndex = 127;
+            this.laHandicappedTitle.Tag = "10104";
             this.laHandicappedTitle.Text = "残疾人：";
             // 
             // laReleaseValue
@@ -480,17 +474,6 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laMobilePopulationTtile.TabIndex = 121;
             this.laMobilePopulationTtile.Text = "流动人口：";
             // 
-            // laFamilyValue
-            // 
-            this.laFamilyValue.AutoSize = true;
-            this.laFamilyValue.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laFamilyValue.Location = new System.Drawing.Point(711, 273);
-            this.laFamilyValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.laFamilyValue.Name = "laFamilyValue";
-            this.laFamilyValue.Size = new System.Drawing.Size(67, 25);
-            this.laFamilyValue.TabIndex = 120;
-            this.laFamilyValue.Text = "00000";
-            // 
             // laHouseTitle
             // 
             this.laHouseTitle.AutoSize = true;
@@ -522,6 +505,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laEmphasisTitle.Name = "laEmphasisTitle";
             this.laEmphasisTitle.Size = new System.Drawing.Size(107, 25);
             this.laEmphasisTitle.TabIndex = 117;
+            this.laEmphasisTitle.Tag = "10111 ";
             this.laEmphasisTitle.Text = "重点人员：";
             // 
             // laForeignerTitle
@@ -533,6 +517,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laForeignerTitle.Name = "laForeignerTitle";
             this.laForeignerTitle.Size = new System.Drawing.Size(107, 25);
             this.laForeignerTitle.TabIndex = 116;
+            this.laForeignerTitle.Tag = "10107";
             this.laForeignerTitle.Text = "境外人员：";
             // 
             // laAloneOlderTitle
@@ -544,6 +529,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laAloneOlderTitle.Name = "laAloneOlderTitle";
             this.laAloneOlderTitle.Size = new System.Drawing.Size(107, 25);
             this.laAloneOlderTitle.TabIndex = 115;
+            this.laAloneOlderTitle.Tag = "10103";
             this.laAloneOlderTitle.Text = "空巢老人：";
             // 
             // laFamilyPopulationTtile
@@ -654,6 +640,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laCleanerTitle.Name = "laCleanerTitle";
             this.laCleanerTitle.Size = new System.Drawing.Size(107, 25);
             this.laCleanerTitle.TabIndex = 105;
+            this.laCleanerTitle.Tag = "10110";
             this.laCleanerTitle.Text = "保洁人员：";
             // 
             // laPriorityTitle
@@ -665,6 +652,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laPriorityTitle.Name = "laPriorityTitle";
             this.laPriorityTitle.Size = new System.Drawing.Size(107, 25);
             this.laPriorityTitle.TabIndex = 104;
+            this.laPriorityTitle.Tag = "10106";
             this.laPriorityTitle.Text = "优抚对象：";
             // 
             // laOlderTitle
@@ -676,6 +664,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laOlderTitle.Name = "laOlderTitle";
             this.laOlderTitle.Size = new System.Drawing.Size(88, 25);
             this.laOlderTitle.TabIndex = 103;
+            this.laOlderTitle.Tag = "m10102";
             this.laOlderTitle.Text = "老年人：";
             // 
             // laCommunityPopulationTitle
@@ -832,25 +821,36 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laTitle.Text = "草堂路第一网格汇总表";
             this.laTitle.Click += new System.EventHandler(this.laTitle_Click);
             // 
+            // laFamilyValue
+            // 
+            this.laFamilyValue.AutoSize = true;
+            this.laFamilyValue.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.laFamilyValue.Location = new System.Drawing.Point(422, 330);
+            this.laFamilyValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.laFamilyValue.Name = "laFamilyValue";
+            this.laFamilyValue.Size = new System.Drawing.Size(67, 25);
+            this.laFamilyValue.TabIndex = 148;
+            this.laFamilyValue.Text = "00000";
+            // 
             // ListCtlNetForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gb1);
             this.Name = "ListCtlNetForm1";
             this.Text = "列表查看-草堂路第一网格";
             this.Load += new System.EventHandler(this.ListCtlNetForm1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gb1.ResumeLayout(false);
+            this.gb1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gb1;
         private System.Windows.Forms.Label laTitle;
         private System.Windows.Forms.Label laResponsiblePhoneValue;
         private System.Windows.Forms.Label laResponsiblePhoneTitle;
@@ -888,7 +888,6 @@ namespace 草堂街道社会智能数据管理系统.草堂路
         private System.Windows.Forms.Label laAloneOlderValue;
         private System.Windows.Forms.Label laFamilyPopulationValue;
         private System.Windows.Forms.Label laMobilePopulationTtile;
-        private System.Windows.Forms.Label laFamilyValue;
         private System.Windows.Forms.Label laHouseTitle;
         private System.Windows.Forms.Label laReleaseTitle;
         private System.Windows.Forms.Label laEmphasisTitle;
@@ -911,6 +910,6 @@ namespace 草堂街道社会智能数据管理系统.草堂路
         private Label laYardGroundValue3;
         private Label laYardGroundValue2;
         private Label laYardGroundValue4;
-        private Label label1;
+        private Label laFamilyValue;
     }
 }

@@ -83,17 +83,20 @@ namespace 草堂街道社会智能数据管理系统.草堂路
                                             }
                                         case 2:
                                             {
-
+                                                lablock.Text = "青华路27号院落";
+                                                viewgdv("2");
                                             }
                                             break;
                                         case 3:
                                             {
-
+                                                lablock.Text = "青华路49号院落";
+                                                viewgdv("3");
                                             }
                                             break;
                                         case 4:
                                             {
-
+                                                lablock.Text = "青华路51号院落";
+                                                viewgdv("3");
                                             }
                                             break;
                                         default:

@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace 草堂街道社会智能数据管理系统.芳邻路
+{
+    public partial class ListFllNetForm10 : Form
+    {
+        public ListFllNetForm10()
+        {
+            InitializeComponent();
+        }
+    }
+}

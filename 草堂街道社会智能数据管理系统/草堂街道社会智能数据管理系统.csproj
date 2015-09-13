@@ -81,6 +81,138 @@
     <Compile Include="ppmanager.Designer.cs">
       <DependentUpon>ppmanager.cs</DependentUpon>
     </Compile>
+    <Compile Include="琴台路\ListQtlNetBlockPersonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetBlockPersonForm.Designer.cs">
+      <DependentUpon>ListQtlNetBlockPersonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm1.Designer.cs">
+      <DependentUpon>ListQtlNetForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm10.Designer.cs">
+      <DependentUpon>ListQtlNetForm10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm2.Designer.cs">
+      <DependentUpon>ListQtlNetForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm3.Designer.cs">
+      <DependentUpon>ListQtlNetForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm4.Designer.cs">
+      <DependentUpon>ListQtlNetForm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm5.Designer.cs">
+      <DependentUpon>ListQtlNetForm5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm6.Designer.cs">
+      <DependentUpon>ListQtlNetForm6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm7.Designer.cs">
+      <DependentUpon>ListQtlNetForm7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm8.Designer.cs">
+      <DependentUpon>ListQtlNetForm8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="琴台路\ListQtlNetForm9.Designer.cs">
+      <DependentUpon>ListQtlNetForm9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetBlockPersonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetBlockPersonForm.Designer.cs">
+      <DependentUpon>ListFllNetBlockPersonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm1.Designer.cs">
+      <DependentUpon>ListFllNetForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm10.Designer.cs">
+      <DependentUpon>ListFllNetForm10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm2.Designer.cs">
+      <DependentUpon>ListFllNetForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm3.Designer.cs">
+      <DependentUpon>ListFllNetForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm4.Designer.cs">
+      <DependentUpon>ListFllNetForm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm5.Designer.cs">
+      <DependentUpon>ListFllNetForm5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm6.Designer.cs">
+      <DependentUpon>ListFllNetForm6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm7.Designer.cs">
+      <DependentUpon>ListFllNetForm7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm8.Designer.cs">
+      <DependentUpon>ListFllNetForm8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="芳邻路\ListFllNetForm9.Designer.cs">
+      <DependentUpon>ListFllNetForm9.cs</DependentUpon>
+    </Compile>
     <Compile Include="草堂路\ListCtlFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +249,60 @@
     <Compile Include="草堂路\ListCtlNetBlockPersonForm.Designer.cs">
       <DependentUpon>ListCtlNetBlockPersonForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="草堂路\ListCtlNetForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm2.Designer.cs">
+      <DependentUpon>ListCtlNetForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm3.Designer.cs">
+      <DependentUpon>ListCtlNetForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm4.Designer.cs">
+      <DependentUpon>ListCtlNetForm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm5.Designer.cs">
+      <DependentUpon>ListCtlNetForm5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm6.Designer.cs">
+      <DependentUpon>ListCtlNetForm6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm7.Designer.cs">
+      <DependentUpon>ListCtlNetForm7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm8.Designer.cs">
+      <DependentUpon>ListCtlNetForm8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="草堂路\ListCtlNetForm9.Designer.cs">
+      <DependentUpon>ListCtlNetForm9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送仙桥\ListSqxNetBlockPersonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送仙桥\ListSqxNetBlockPersonForm.Designer.cs">
+      <DependentUpon>ListSqxNetBlockPersonForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="送仙桥\ListSxqFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +329,66 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="送仙桥\ListSxqNetForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm1.Designer.cs">
+      <DependentUpon>ListSxqNetForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm10.Designer.cs">
+      <DependentUpon>ListSxqNetForm10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm2.Designer.cs">
+      <DependentUpon>ListSxqNetForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm3.Designer.cs">
+      <DependentUpon>ListSxqNetForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm4.Designer.cs">
+      <DependentUpon>ListSxqNetForm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm5.Designer.cs">
+      <DependentUpon>ListSxqNetForm5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm6.Designer.cs">
+      <DependentUpon>ListSxqNetForm6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm7.Designer.cs">
+      <DependentUpon>ListSxqNetForm7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm8.Designer.cs">
+      <DependentUpon>ListSxqNetForm8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="送仙桥\ListSxqNetForm9.Designer.cs">
+      <DependentUpon>ListSxqNetForm9.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addUser.resx">
       <DependentUpon>addUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,8 +398,77 @@
     <EmbeddedResource Include="ppmanager.resx">
       <DependentUpon>ppmanager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="琴台路\ListQtlFrom.resx">
+      <DependentUpon>ListQtlFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="琴台路\ListQtlNetBlockPersonForm.resx">
+      <DependentUpon>ListQtlNetBlockPersonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="琴台路\ListQtlNetForm1.resx">
+      <DependentUpon>ListQtlNetForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="琴台路\ListQtlNetForm10.resx">
+      <DependentUpon>ListQtlNetForm10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="琴台路\ListQtlNetForm2.resx">
+      <DependentUpon>ListQtlNetForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="琴台路\ListQtlNetForm3.resx">
+      <DependentUpon>ListQtlNetForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="琴台路\ListQtlNetForm4.resx">
+      <DependentUpon>ListQtlNetForm4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="琴台路\ListQtlNetForm5.resx">
+      <DependentUpon>ListQtlNetForm5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="琴台路\ListQtlNetForm6.resx">
+      <DependentUpon>ListQtlNetForm6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="琴台路\ListQtlNetForm7.resx">
+      <DependentUpon>ListQtlNetForm7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="琴台路\ListQtlNetForm8.resx">
+      <DependentUpon>ListQtlNetForm8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="琴台路\ListQtlNetForm9.resx">
+      <DependentUpon>ListQtlNetForm9.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="芳邻路\ListFllFrom.resx">
       <DependentUpon>ListFllFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="芳邻路\ListFllNetBlockPersonForm.resx">
+      <DependentUpon>ListFllNetBlockPersonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="芳邻路\ListFllNetForm1.resx">
+      <DependentUpon>ListFllNetForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="芳邻路\ListFllNetForm10.resx">
+      <DependentUpon>ListFllNetForm10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="芳邻路\ListFllNetForm2.resx">
+      <DependentUpon>ListFllNetForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="芳邻路\ListFllNetForm3.resx">
+      <DependentUpon>ListFllNetForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="芳邻路\ListFllNetForm4.resx">
+      <DependentUpon>ListFllNetForm4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="芳邻路\ListFllNetForm5.resx">
+      <DependentUpon>ListFllNetForm5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="芳邻路\ListFllNetForm6.resx">
+      <DependentUpon>ListFllNetForm6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="芳邻路\ListFllNetForm7.resx">
+      <DependentUpon>ListFllNetForm7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="芳邻路\ListFllNetForm8.resx">
+      <DependentUpon>ListFllNetForm8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="芳邻路\ListFllNetForm9.resx">
+      <DependentUpon>ListFllNetForm9.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="草堂路\ListCtlFrom.resx">
       <DependentUpon>ListCtlFrom.cs</DependentUpon>
@@ -163,6 +478,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="草堂路\ListCtlNetBlockPersonForm.resx">
       <DependentUpon>ListCtlNetBlockPersonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="草堂路\ListCtlNetForm2.resx">
+      <DependentUpon>ListCtlNetForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="草堂路\ListCtlNetForm3.resx">
+      <DependentUpon>ListCtlNetForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="草堂路\ListCtlNetForm4.resx">
+      <DependentUpon>ListCtlNetForm4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="草堂路\ListCtlNetForm5.resx">
+      <DependentUpon>ListCtlNetForm5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="草堂路\ListCtlNetForm6.resx">
+      <DependentUpon>ListCtlNetForm6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="草堂路\ListCtlNetForm7.resx">
+      <DependentUpon>ListCtlNetForm7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="草堂路\ListCtlNetForm8.resx">
+      <DependentUpon>ListCtlNetForm8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="草堂路\ListCtlNetForm9.resx">
+      <DependentUpon>ListCtlNetForm9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送仙桥\ListSqxNetBlockPersonForm.resx">
+      <DependentUpon>ListSqxNetBlockPersonForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="送仙桥\ListSxqFrom.resx">
       <DependentUpon>ListSxqFrom.cs</DependentUpon>
@@ -186,6 +528,36 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="送仙桥\ListSxqNetForm1.resx">
+      <DependentUpon>ListSxqNetForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送仙桥\ListSxqNetForm10.resx">
+      <DependentUpon>ListSxqNetForm10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送仙桥\ListSxqNetForm2.resx">
+      <DependentUpon>ListSxqNetForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送仙桥\ListSxqNetForm3.resx">
+      <DependentUpon>ListSxqNetForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送仙桥\ListSxqNetForm4.resx">
+      <DependentUpon>ListSxqNetForm4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送仙桥\ListSxqNetForm5.resx">
+      <DependentUpon>ListSxqNetForm5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送仙桥\ListSxqNetForm6.resx">
+      <DependentUpon>ListSxqNetForm6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送仙桥\ListSxqNetForm7.resx">
+      <DependentUpon>ListSxqNetForm7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送仙桥\ListSxqNetForm8.resx">
+      <DependentUpon>ListSxqNetForm8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="送仙桥\ListSxqNetForm9.resx">
+      <DependentUpon>ListSxqNetForm9.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

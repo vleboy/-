@@ -47,14 +47,14 @@ namespace 草堂街道社会智能数据管理系统
             + "CASE features.cleaner when true then '是' ELSE '否'end AS cle,"
             + "CASE features.old when true then '是' ELSE '否'end AS old,"
             + "CASE features.old_alone when true then '是' ELSE '否'end AS olda,"
-            + "CASE features.poor when true then '是' ELSE '否'end AS poor,"
-            + "CASE features.handicapped when true then '是' ELSE '否'end AS hand,"
+            + "CASE features.poor when poor then '是' ELSE '否'end AS poor,"
+            + "CASE features.handicapped when handicapped then '是' ELSE '否'end AS hand,"
             + "CASE features.resident when resident then '是' ELSE '否'end AS res,"
-            + "CASE features.unjob when true then '是' ELSE '否'end AS unjob,"
-            + "CASE features.dope when true then '是' ELSE '否'end AS dope,"
-            + "CASE features.correction when true then '是' ELSE '否'end AS cor,"
-            + "CASE features.released when true then '是' ELSE '否'end AS rel,"
-            + "CASE features.foreigner when true then '是' ELSE '否'end AS fore FROM district INNER JOIN grid ON grid.district = district.id INNER JOIN block ON block.grid = grid.id INNER JOIN population ON population.block = block.id INNER JOIN features ON population.features = features.id ";
+            + "CASE features.unjob when unjob then '是' ELSE '否'end AS unjob,"
+            + "CASE features.dope when dope then '是' ELSE '否'end AS dope,"
+            + "CASE features.correction when correction then '是' ELSE '否'end AS cor,"
+            + "CASE features.released when released then '是' ELSE '否'end AS rel,"
+            + "CASE features.foreigner when foreigner then '是' ELSE '否'end AS fore FROM district INNER JOIN grid ON grid.district = district.id INNER JOIN block ON block.grid = grid.id INNER JOIN population ON population.block = block.id INNER JOIN features ON population.features = features.id ";
             List<item> items = new List<item>();
             MySqlDataReader sdr;
             sdr = db.GetDataReader("SELECT district.`name`,district.`id` FROM district");
@@ -91,7 +91,7 @@ namespace 草堂街道社会智能数据管理系统
                 {
                     case "m1":
                         {
-                            sqlcmd += "WHERE population.educational = '党员'" ;
+                            sqlcmd += "WHERE population.educational = '党员' AND  district.id = '1'";
                         }
                         break;
                     case "m2":
@@ -162,6 +162,81 @@ namespace 草堂街道社会智能数据管理系统
                     case "m15":
                         {
                             sqlcmd += "WHERE features.released >= 1";
+                        }
+                        break;
+                    case "m101":
+                        {
+                            sqlcmd += "WHERE population.educational = '党员'AND  district.id = '1'";
+                        }
+                        break;
+                    case "m102":
+                        {
+                            sqlcmd += "WHERE features.old IS NOT NULL AND  district.id = '1'";
+                        }
+                        break;
+                    case "m103":
+                        {
+                            sqlcmd += "WHERE features.old >= 1 AND features.old_alone >= 1 AND  district.id = '1'";
+                        }
+                        break;
+                    case "m104":
+                        {
+                            sqlcmd += "WHERE features.handicapped >= 1 AND  district.id = '1'";
+                        }
+                        break;
+                    case "m105":
+                        {
+                            sqlcmd += "WHERE features.handicapped >= 1 AND  district.id = '1'";
+                        }
+                        break;
+                    case "m106":
+                        {
+                            sqlcmd += "WHERE features.poor >= 1 AND  district.id = '1'";
+                        }
+                        break;
+                    case "m107":
+                        {
+                            sqlcmd += "WHERE features.foreigner >= 1 AND  district.id = '1'";
+                        }
+                        break;
+                    case "m108":
+                        {
+                            sqlcmd += "WHERE features.poor >= 1 AND  district.id = '1'";
+                        }
+                        break;
+                    case "m109":
+                        {
+                            sqlcmd += "WHERE features.poor >= 1 AND  district.id = '1'";
+                        }
+                        break;
+                    case "m110":
+                        {
+                            sqlcmd += "WHERE features.cleaner >= 1 AND  district.id = '1'";
+                        }
+                        break;
+                    case "m111":
+                        {
+                            sqlcmd += "WHERE features.vip >= 1 AND  district.id = '1'";
+                        }
+                        break;
+                    case "m112":
+                        {
+                            sqlcmd += "WHERE features.unjob >= 1 AND  district.id = '1'";
+                        }
+                        break;
+                    case "m113":
+                        {
+                            sqlcmd += "WHERE features.dope >= 1 AND  district.id = '1'";
+                        }
+                        break;
+                    case "m114":
+                        {
+                            sqlcmd += "WHERE features.correction >= 1 AND  district.id = '1'";
+                        }
+                        break;
+                    case "m115":
+                        {
+                            sqlcmd += "WHERE features.released >= 1 AND  district.id = '1'";
                         }
                         break;
                     default:

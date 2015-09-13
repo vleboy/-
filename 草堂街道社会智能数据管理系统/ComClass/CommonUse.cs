@@ -152,19 +152,132 @@ namespace 草堂街道社会智能数据管理系统.ComClass
                     Ctl1.main = form;
                     Ctl1.Show();
                     break;
-                case "111":
+                case "12"://草堂路社区网格2
 
+                    ListCtlNetForm2 Ctl2 = new ListCtlNetForm2();
+                    Ctl2.MdiParent = form;
+                    Ctl2.StartPosition = FormStartPosition.CenterScreen;
+                    Ctl2.Tag = la.Tag.ToString();
+                    Ctl2.WindowState = FormWindowState.Maximized;
+                    Ctl2.main = form;
+                    Ctl2.Show();
+                    break;
+                case "13"://草堂路社区网格3
+
+                    ListCtlNetForm3 Ctl3 = new ListCtlNetForm3();
+                    Ctl3.MdiParent = form;
+                    Ctl3.StartPosition = FormStartPosition.CenterScreen;
+                    Ctl3.Tag = la.Tag.ToString();
+                    Ctl3.WindowState = FormWindowState.Maximized;
+                    Ctl3.main = form;
+                    Ctl3.Show();
+                    break;
+                case "14"://草堂路社区网格4
+
+                    ListCtlNetForm4 Ctl4 = new ListCtlNetForm4();
+                    Ctl4.MdiParent = form;
+                    Ctl4.StartPosition = FormStartPosition.CenterScreen;
+                    Ctl4.Tag = la.Tag.ToString();
+                    Ctl4.WindowState = FormWindowState.Maximized;
+                    Ctl4.main = form;
+                    Ctl4.Show();
+                    break;
+                case "15"://草堂路社区网格5
+
+                    ListCtlNetForm5 Ctl5 = new ListCtlNetForm5();
+                    Ctl5.MdiParent = form;
+                    Ctl5.StartPosition = FormStartPosition.CenterScreen;
+                    Ctl5.Tag = la.Tag.ToString();
+                    Ctl5.WindowState = FormWindowState.Maximized;
+                    Ctl5.main = form;
+                    Ctl5.Show();
+                    break;
+                case "16"://草堂路社区网格6
+
+                    ListCtlNetForm6 Ctl6 = new ListCtlNetForm6();
+                    Ctl6.MdiParent = form;
+                    Ctl6.StartPosition = FormStartPosition.CenterScreen;
+                    Ctl6.Tag = la.Tag.ToString();
+                    Ctl6.WindowState = FormWindowState.Maximized;
+                    Ctl6.main = form;
+                    Ctl6.Show();
+                    break;
+                case "17"://草堂路社区网格7
+
+                    ListCtlNetForm7 Ctl7 = new ListCtlNetForm7();
+                    Ctl7.MdiParent = form;
+                    Ctl7.StartPosition = FormStartPosition.CenterScreen;
+                    Ctl7.Tag = la.Tag.ToString();
+                    Ctl7.WindowState = FormWindowState.Maximized;
+                    Ctl7.main = form;
+                    Ctl7.Show();
+                    break;
+                case "18"://草堂路社区网格8
+
+                    ListCtlNetForm8 Ctl8 = new ListCtlNetForm8();
+                    Ctl8.MdiParent = form;
+                    Ctl8.StartPosition = FormStartPosition.CenterScreen;
+                    Ctl8.Tag = la.Tag.ToString();
+                    Ctl8.WindowState = FormWindowState.Maximized;
+                    Ctl8.main = form;
+                    Ctl8.Show();
+                    break;
+                case "19"://草堂路社区网格9
+
+                    ListCtlNetForm9 Ctl9 = new ListCtlNetForm9();
+                    Ctl9.MdiParent = form;
+                    Ctl9.StartPosition = FormStartPosition.CenterScreen;
+                    Ctl9.Tag = la.Tag.ToString();
+                    Ctl9.WindowState = FormWindowState.Maximized;
+                    Ctl9.main = form;
+                    Ctl9.Show();
+                    break;
+                case "111":
+                case "112":
+                case "113":
+                case "114":
+                case "121":
+                case "131":
+                case "132":
+                case "133":
+                case "134":
+                case "135":
+                case "136":
+                case "141":
+                case "142":
+                case "143":
+                case "151":
+                case "152":
+                case "153":
+                case "161":
+                case "171":
+                case "172":
+                case "181":
+                case "182":
+                case "191":
+                case "192":
+                case "193":
+                case "211":
+                case "212":
+                case "213":
+                case "214":
+                case "215":
                     ListCtlNetBlockPersonForm Ctl11 = new ListCtlNetBlockPersonForm();
                     Ctl11.MdiParent = form;
                     Ctl11.StartPosition = FormStartPosition.CenterScreen;
                     Ctl11.Tag = la.Tag.ToString();
                     Ctl11.WindowState = FormWindowState.Maximized;
                     Ctl11.main = form;
-                    Ctl11.resident = 1;
-                    Ctl11.block = 1;
-                    Ctl11.grid = 1;
+                    Ctl11.resident = Convert.ToInt16(la.Tag.ToString()[0].ToString());
+                    Ctl11.grid = Convert.ToInt16(la.Tag.ToString()[1].ToString()); 
+                    Ctl11.block = Convert.ToInt16(la.Tag.ToString()[2].ToString()); 
                     Ctl11.Show();
                     break;
+       
+             
+               
+
+                
                 case "2"://列表
 
                     ListQtlFrom Qtl = new ListQtlFrom();
@@ -174,6 +287,7 @@ namespace 草堂街道社会智能数据管理系统.ComClass
                     Qtl.WindowState = FormWindowState.Maximized;
                     Qtl.Show();
                     break;
+
                 case "3"://列表
 
                     ListFllFrom Fll = new ListFllFrom();
@@ -183,21 +297,36 @@ namespace 草堂街道社会智能数据管理系统.ComClass
                     Fll.WindowState = FormWindowState.Maximized;
                     Fll.Show();
                     break;
-                case "m1"://党员
-                case "m2"://党员
-                case "m3"://党员
-                case "m4"://党员
-                case "m5"://党员
-                case "m6"://党员
-                case "m7"://党员
-                case "m8"://党员
-                case "m9"://党员
-                case "m10"://党员
-                case "m11"://党员
-                case "m12"://党员
-                case "m13"://党员
-                case "m14"://党员
-                case "m15"://党员
+                case "m1": 
+                case "m2": 
+                case "m3": 
+                case "m4": 
+                case "m5": 
+                case "m6": 
+                case "m7": 
+                case "m8": 
+                case "m9": 
+                case "m10": 
+                case "m11": 
+                case "m12": 
+                case "m13": 
+                case "m14": 
+                case "m15":
+                case "m101":
+                case "m102":
+                case "m103":
+                case "m104":
+                case "m105":
+                case "m106":
+                case "m107":
+                case "m108":
+                case "m109":
+                case "m110":
+                case "m111":
+                case "m112":
+                case "m113":
+                case "m114":
+                case "m115":
                     ppmanager m1 = new ppmanager();
 
                     m1.MdiParent = form;
