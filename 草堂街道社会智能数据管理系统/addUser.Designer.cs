@@ -483,7 +483,7 @@ namespace 草堂街道社会智能数据管理系统
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 12);
             this.label6.TabIndex = 34;
-            this.label6.Text = "教育程度";
+            this.label6.Text = "政治面貌";
             // 
             // cb_czrk
             // 

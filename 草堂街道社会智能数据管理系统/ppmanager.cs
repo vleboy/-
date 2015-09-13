@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,14 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using 草堂街道社会智能数据管理系统.ComClass;
+using 草堂街道社会智能数据管理系统.dataClass;
 
 namespace 草堂街道社会智能数据管理系统
 {
     public partial class ppmanager : Form
     {
+        private readonly CommonUse commUse = new CommonUse();
+        private readonly DataBase db = new DataBase();
+ 
+
         public ppmanager()
         {
             InitializeComponent();
+        
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -24,13 +32,84 @@ namespace 草堂街道社会智能数据管理系统
 
         private void 添加人员ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           
             CommonUse commUse = new CommonUse();
-            commUse.ShowForm((ToolStripMenuItem)sender, this.main);
+            var x = (ToolStripMenuItem)sender;
+
+            commUse.ShowForm(x.Tag.ToString(), this.main);
         }
 
         private void ppmanager_Load(object sender, EventArgs e)
         {
+            string sqlcmd = "SELECT district.`name` AS nd, grid.`name` AS ng, block.`name` AS nb, population.card_id AS cid, population.`name` AS na,population.address AS ad, "
+           + "CASE population.educational WHEN '党员' THEN '是' ELSE '否' end AS edu,"
+           + "CASE features.vip when true then '是' ELSE '否'end AS vip,"
+            + "CASE features.cleaner when true then '是' ELSE '否'end AS cle,"
+            + "CASE features.old when true then '是' ELSE '否'end AS old,"
+            + "CASE features.old_alone when true then '是' ELSE '否'end AS olda,"
+            + "CASE features.poor when true then '是' ELSE '否'end AS poor,"
+            + "CASE features.handicapped when true then '是' ELSE '否'end AS hand,"
+            + "CASE features.resident when true then '是' ELSE '否'end AS res,"
+            + "CASE features.unjob when true then '是' ELSE '否'end AS unjob,"
+            + "CASE features.dope when true then '是' ELSE '否'end AS dope,"
+            + "CASE features.correction when true then '是' ELSE '否'end AS cor,"
+            + "CASE features.released when true then '是' ELSE '否'end AS rel,"
+            + "CASE features.foreigner when true then '是' ELSE '否'end AS fore FROM district INNER JOIN grid ON grid.district = district.id INNER JOIN block ON block.grid = grid.id INNER JOIN population ON population.block = block.id INNER JOIN features ON population.features = features.id ";
+            List<item> items = new List<item>();
+            MySqlDataReader sdr;
+            sdr = db.GetDataReader("SELECT district.`name`,district.`id` FROM district");
+            while (sdr.Read())
+            {
+                item it = new item(sdr[0].ToString(), sdr[1].ToString());
+                items.Add(it);
+            }
+            sssq_cb.DataSource = items;
+            //   items.Clear();
+            sdr.Close();
+            sdr = db.GetDataReader("SELECT 	grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = 1");
+            while (sdr.Read())
+            {
+                item it = new item(sdr[0].ToString(), sdr[1].ToString());
+                items.Add(it);
+            }
+            sswg_cb.DataSource = items;
+            //  items.Clear();
+            sdr.Close();
+            sdr = db.GetDataReader("SELECT 	block.`name`,block.id FROM grid INNER JOIN block ON block.grid = grid.id WHERE grid.id = 1");
+            while (sdr.Read())
+            {
+                item it = new item(sdr[0].ToString(), sdr[1].ToString());
+                items.Add(it);
+            }
+            ssyl_cb.DataSource = items;
+            //  items.Clear();
+            sdr.Close();
+            
+            if (this.Tag.ToString() != null)
+            {
+                switch (this.Tag.ToString())
+                {
+                    case "m4":
+                        {
+                            sqlcmd += "WHERE population.educational = '党员'" ;
+                        }
+                        break;
+                    
+                    default:
+                        break;
+                }
+                dgv.DataSource = db.GetDataSet(sqlcmd, "t").Tables["t"];
+            }
+        }
 
+        private void sssq_cb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            commUse.district_gird_block(sssq_cb, sswg_cb, "district", "grid");
+        }
+
+        private void sswg_cb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            commUse.district_gird_block(sswg_cb, ssyl_cb, "grid", "block");
         }
     }
 }

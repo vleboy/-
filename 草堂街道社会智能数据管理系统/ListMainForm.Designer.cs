@@ -161,7 +161,7 @@ namespace 草堂街道社会智能数据管理系统
             // 
             this.laSXQ.AutoSize = true;
             this.laSXQ.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laSXQ.Location = new System.Drawing.Point(239, 251);
+            this.laSXQ.Location = new System.Drawing.Point(637, 251);
             this.laSXQ.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laSXQ.Name = "laSXQ";
             this.laSXQ.Size = new System.Drawing.Size(107, 25);
@@ -174,7 +174,7 @@ namespace 草堂街道社会智能数据管理系统
             // 
             this.laCTL.AutoSize = true;
             this.laCTL.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laCTL.Location = new System.Drawing.Point(364, 251);
+            this.laCTL.Location = new System.Drawing.Point(258, 251);
             this.laCTL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laCTL.Name = "laCTL";
             this.laCTL.Size = new System.Drawing.Size(107, 25);
@@ -187,7 +187,7 @@ namespace 草堂街道社会智能数据管理系统
             // 
             this.laQTL.AutoSize = true;
             this.laQTL.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laQTL.Location = new System.Drawing.Point(495, 251);
+            this.laQTL.Location = new System.Drawing.Point(382, 251);
             this.laQTL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laQTL.Name = "laQTL";
             this.laQTL.Size = new System.Drawing.Size(107, 25);
@@ -200,7 +200,7 @@ namespace 草堂街道社会智能数据管理系统
             // 
             this.laFLL.AutoSize = true;
             this.laFLL.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laFLL.Location = new System.Drawing.Point(621, 251);
+            this.laFLL.Location = new System.Drawing.Point(506, 251);
             this.laFLL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laFLL.Name = "laFLL";
             this.laFLL.Size = new System.Drawing.Size(107, 25);
@@ -372,7 +372,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laCommunistTitle.Name = "laCommunistTitle";
             this.laCommunistTitle.Size = new System.Drawing.Size(69, 25);
             this.laCommunistTitle.TabIndex = 24;
+            this.laCommunistTitle.Tag = "m1";
             this.laCommunistTitle.Text = "党员：";
+            this.laCommunistTitle.Click += new System.EventHandler(this.laCommunistTitle_Click);
             // 
             // laCommunistValue
             // 
@@ -395,6 +397,7 @@ namespace 草堂街道社会智能数据管理系统
             this.laOlderTitle.Name = "laOlderTitle";
             this.laOlderTitle.Size = new System.Drawing.Size(88, 25);
             this.laOlderTitle.TabIndex = 26;
+            this.laOlderTitle.Tag = "m2";
             this.laOlderTitle.Text = "老年人：";
             // 
             // laOlderValue
@@ -417,6 +420,7 @@ namespace 草堂街道社会智能数据管理系统
             this.laAloneOlderTitle.Name = "laAloneOlderTitle";
             this.laAloneOlderTitle.Size = new System.Drawing.Size(107, 25);
             this.laAloneOlderTitle.TabIndex = 28;
+            this.laAloneOlderTitle.Tag = "m3";
             this.laAloneOlderTitle.Text = "空巢老人：";
             // 
             // laAloneOlderValue
@@ -439,7 +443,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laHandicappedTitle.Name = "laHandicappedTitle";
             this.laHandicappedTitle.Size = new System.Drawing.Size(88, 25);
             this.laHandicappedTitle.TabIndex = 30;
+            this.laHandicappedTitle.Tag = "m4";
             this.laHandicappedTitle.Text = "残疾人：";
+            this.laHandicappedTitle.Click += new System.EventHandler(this.laHandicappedTitle_Click);
             // 
             // laMentalTitle
             // 
@@ -450,6 +456,7 @@ namespace 草堂街道社会智能数据管理系统
             this.laMentalTitle.Name = "laMentalTitle";
             this.laMentalTitle.Size = new System.Drawing.Size(107, 25);
             this.laMentalTitle.TabIndex = 31;
+            this.laMentalTitle.Tag = "m5";
             this.laMentalTitle.Text = "精神残疾：";
             // 
             // laHandicappedValue

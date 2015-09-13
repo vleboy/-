@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -74,16 +75,16 @@ namespace 草堂街道社会智能数据管理系统.ComClass
         }
 
 
-        public void ShowForm(ToolStripMenuItem ob, Form form)
+        public void ShowForm(string ob, Form form)
         {
-            switch (ob.Tag.ToString())
+            switch (ob)
             {
                 case "list"://列表
 
                     ListMainForm ListMain = new ListMainForm();
                     ListMain.MdiParent = form;
                     ListMain.StartPosition = FormStartPosition.CenterScreen;
-                    ListMain.Tag = ob.Tag.ToString();
+                    ListMain.Tag = ob;
                     ListMain.WindowState = FormWindowState.Maximized;
                     ListMain.main = form;
                     ListMain.Show();
@@ -97,7 +98,7 @@ namespace 草堂街道社会智能数据管理系统.ComClass
                     ppmanager appmanager = new ppmanager();
                     appmanager.MdiParent = form;
                     appmanager.StartPosition = FormStartPosition.CenterScreen;
-                    appmanager.Tag = ob.Tag.ToString();
+                    appmanager.Tag = ob;
                     appmanager.WindowState = FormWindowState.Maximized;
                     appmanager.main = form;
                     appmanager.Show();
@@ -107,7 +108,7 @@ namespace 草堂街道社会智能数据管理系统.ComClass
                     addUser add = new addUser();
                     add.MdiParent = form;
                     add.StartPosition = FormStartPosition.CenterScreen;
-                    add.Tag = ob.Tag.ToString();
+                    add.Tag = ob;
                     add.WindowState = FormWindowState.Normal;
                     add.main = form;
                     add.Show();
@@ -182,7 +183,87 @@ namespace 草堂街道社会智能数据管理系统.ComClass
                     Fll.WindowState = FormWindowState.Maximized;
                     Fll.Show();
                     break;
+                case "m4"://党员
+
+                    ppmanager m4= new ppmanager();
+                    m4.MdiParent = form;
+                    m4.StartPosition = FormStartPosition.CenterScreen;
+                    m4.Tag = la.Tag.ToString();
+                    m4.WindowState = FormWindowState.Maximized;
+                    m4.Show();
+                    break;
             }
+        }
+
+        public void district_gird_block(ComboBox cb1,ComboBox cb2,string from1,string from2)
+        {
+
+            //string index = null;
+            //    List<item> items = new List<item>();
+            //    MySqlDataReader sdr;
+            //    item it = (item)cb_grid.SelectedItem;
+            //    index = it.Value;
+            //    sdr = db.GetDataReader("SELECT 	block.`name`,block.id FROM grid INNER JOIN block ON block.grid = grid.id WHERE grid.id = " + index);
+            //    while (sdr.Read())
+            //    {
+            //        item its = new item(sdr[0].ToString(), sdr[1].ToString());
+            //        items.Add(its);
+            //    }
+            //     sdr.Close();
+            //     cb_block.DataSource = items;
+
+            string sqlcmd = "SELECT 	grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = ";
+            sqlcmd = sqlcmd.Replace("grid", from2);
+            sqlcmd =  sqlcmd.Replace("district", from1);
+
+            string index = null;
+            List<item> items = new List<item>();
+            MySqlDataReader sdr;
+            item it = (item)cb1.SelectedItem;
+            index = it.Value;
+
+            // sdr = db.GetDataReader("SELECT 	grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = " + index);
+            sdr = db.GetDataReader(sqlcmd + index);
+            while (sdr.Read())
+            {
+                item its = new item(sdr[0].ToString(), sdr[1].ToString());
+                items.Add(its);
+            }
+            sdr.Close();
+            cb2.DataSource = items;
+        }
+
+        public void load_district(ComboBox district,ComboBox grid ,ComboBox block)
+        {
+            List<item> items = new List<item>();
+            MySqlDataReader sdr;
+            sdr = db.GetDataReader("SELECT district.`name`,district.`id` FROM district");
+            while (sdr.Read())
+            {
+                item it = new item(sdr[0].ToString(), sdr[1].ToString());
+                items.Add(it);
+            }
+            district.DataSource = items;
+            //   items.Clear();
+            sdr.Close();
+            sdr = db.GetDataReader("SELECT 	grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = 1");
+            while (sdr.Read())
+            {
+                item it = new item(sdr[0].ToString(), sdr[1].ToString());
+                items.Add(it);
+            }
+            grid.DataSource = items;
+            //  items.Clear();
+            sdr.Close();
+            sdr = db.GetDataReader("SELECT 	block.`name`,block.id FROM grid INNER JOIN block ON block.grid = grid.id WHERE grid.id = 1");
+            while (sdr.Read())
+            {
+                item it = new item(sdr[0].ToString(), sdr[1].ToString());
+                items.Add(it);
+            }
+            block.DataSource = items;
+            //  items.Clear();
+            sdr.Close();
         }
     }
 }

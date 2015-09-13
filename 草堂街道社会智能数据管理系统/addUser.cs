@@ -1,11 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using 草堂街道社会智能数据管理系统.ComClass;
 using 草堂街道社会智能数据管理系统.dataClass;
@@ -378,16 +373,17 @@ namespace 草堂街道社会智能数据管理系统
 
         private void addUser_Load(object sender, EventArgs e)
         {
+            //commUse.load_district(cb_district, cb_grid, cb_block);
             List<item> items = new List<item>();
-             MySqlDataReader sdr;
-             sdr = db.GetDataReader("SELECT district.`name`,district.`id` FROM district");
+            MySqlDataReader sdr;
+            sdr = db.GetDataReader("SELECT district.`name`,district.`id` FROM district");
             while (sdr.Read())
             {
                 item it = new item(sdr[0].ToString(), sdr[1].ToString());
                 items.Add(it);
             }
             cb_district.DataSource = items;
-         //   items.Clear();
+            //   items.Clear();
             sdr.Close();
             sdr = db.GetDataReader("SELECT 	grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = 1");
             while (sdr.Read())
@@ -396,7 +392,7 @@ namespace 草堂街道社会智能数据管理系统
                 items.Add(it);
             }
             cb_grid.DataSource = items;
-          //  items.Clear();
+            //  items.Clear();
             sdr.Close();
             sdr = db.GetDataReader("SELECT 	block.`name`,block.id FROM grid INNER JOIN block ON block.grid = grid.id WHERE grid.id = 1");
             while (sdr.Read())
@@ -405,40 +401,39 @@ namespace 草堂街道社会智能数据管理系统
                 items.Add(it);
             }
             cb_block.DataSource = items;
-          //  items.Clear();
+            //  items.Clear();
             sdr.Close();
         }
 
         private void cb_district_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
-            
+            commUse.district_gird_block(cb_district, cb_grid, "district", "grid");
+
         }
 
         private void cb_grid_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            commUse.district_gird_block(cb_grid, cb_block, "grid", "block");
         }
 
         private void cb_grid_SelectionChangeCommitted(object sender, EventArgs e)
         {
 
-       
-                string index = null;
-                List<item> items = new List<item>();
-                MySqlDataReader sdr;
-                item it = (item)cb_grid.SelectedItem;
-                index = it.Value;
-                sdr = db.GetDataReader("SELECT 	block.`name`,block.id FROM grid INNER JOIN block ON block.grid = grid.id WHERE grid.id = " + index);
-                while (sdr.Read())
-                {
-                    item its = new item(sdr[0].ToString(), sdr[1].ToString());
-                    items.Add(its);
-                }
-            sdr.Close();
-            cb_block.DataSource = items;
-           // cb_grid.Text = sdr[0].ToString();
-              //  items.Clear();
+               //  commUse.district_gird_block(cb_grid,cb_block, "grid", "block");
+            //string index = null;
+            //    List<item> items = new List<item>();
+            //    MySqlDataReader sdr;
+            //    item it = (item)cb_grid.SelectedItem;
+            //    index = it.Value;
+            //    sdr = db.GetDataReader("SELECT 	block.`name`,block.id FROM grid INNER JOIN block ON block.grid = grid.id WHERE grid.id = " + index);
+            //    while (sdr.Read())
+            //    {
+            //        item its = new item(sdr[0].ToString(), sdr[1].ToString());
+            //        items.Add(its);
+            //    }
+            //     sdr.Close();
+            //     cb_block.DataSource = items;
+           
                 
             
 
@@ -446,21 +441,22 @@ namespace 草堂街道社会智能数据管理系统
 
         private void cb_district_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            string index = null;
-            List<item> items = new List<item>();
-            MySqlDataReader sdr;
-            item it = (item)cb_district.SelectedItem;
-            index = it.Value;
-            sdr = db.GetDataReader("SELECT 	grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = " + index);
-            while (sdr.Read())
-            {
-                item its = new item(sdr[0].ToString(), sdr[1].ToString());
-                items.Add(its);
-            }
-            sdr.Close();
-            cb_grid.DataSource = items;
-           // cb_district.Text = sdr[0].ToString();
-           // items.Clear();
+
+           // commUse.district_gird_block(cb_district,cb_grid, "district", "grid");
+            //string index = null;
+            //List<item> items = new List<item>();
+            //MySqlDataReader sdr;
+            //item it = (item)cb_district.SelectedItem;
+            //index = it.Value;
+            //sdr = db.GetDataReader("SELECT 	grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = " + index);
+            //while (sdr.Read())
+            //{
+            //    item its = new item(sdr[0].ToString(), sdr[1].ToString());
+            //    items.Add(its);
+            //}
+            //sdr.Close();
+            //cb_grid.DataSource = items;
+           
             
            
         }

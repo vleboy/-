@@ -37,5 +37,10 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             CommonUse commUse = new CommonUse();
             commUse.ShowForm((Label)sender, this.main);
         }
+
+        private void laCommunistTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

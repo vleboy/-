@@ -914,6 +914,7 @@ namespace 草堂街道社会智能数据管理系统
             this.Controls.Add(this.CTL);
             this.Name = "ListCtlFrom";
             this.Text = "列表查看-草堂路社区汇总";
+            this.Load += new System.EventHandler(this.ListCtlFrom_Load);
             this.CTL.ResumeLayout(false);
             this.CTL.PerformLayout();
             this.ResumeLayout(false);

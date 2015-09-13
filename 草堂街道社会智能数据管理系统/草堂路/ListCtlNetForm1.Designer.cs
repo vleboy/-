@@ -35,6 +35,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListCtlNetForm1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.laYardGroundValue4 = new System.Windows.Forms.Label();
             this.laYardGroundValue3 = new System.Windows.Forms.Label();
             this.laYardGroundValue2 = new System.Windows.Forms.Label();
@@ -95,7 +96,6 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laResponsibleValue = new System.Windows.Forms.Label();
             this.laResponsibleTitle = new System.Windows.Forms.Label();
             this.laTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -169,6 +169,17 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.groupBox1.Size = new System.Drawing.Size(984, 705);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(422, 328);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 25);
+            this.label1.TabIndex = 148;
+            this.label1.Text = "0";
             // 
             // laYardGroundValue4
             // 
@@ -368,6 +379,7 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laCommunistTitle.Size = new System.Drawing.Size(69, 25);
             this.laCommunistTitle.TabIndex = 130;
             this.laCommunistTitle.Text = "党员：";
+            this.laCommunistTitle.Click += new System.EventHandler(this.laCommunistTitle_Click);
             // 
             // laUnemploymentTitle
             // 
@@ -819,17 +831,6 @@ namespace 草堂街道社会智能数据管理系统.草堂路
             this.laTitle.TabIndex = 1;
             this.laTitle.Text = "草堂路第一网格汇总表";
             this.laTitle.Click += new System.EventHandler(this.laTitle_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(422, 328);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 25);
-            this.label1.TabIndex = 148;
-            this.label1.Text = "0";
             // 
             // ListCtlNetForm1
             // 
