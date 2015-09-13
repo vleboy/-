@@ -399,6 +399,7 @@ namespace 草堂街道社会智能数据管理系统
             this.laOlderTitle.TabIndex = 26;
             this.laOlderTitle.Tag = "m2";
             this.laOlderTitle.Text = "老年人：";
+            this.laOlderTitle.Click += new System.EventHandler(this.laOlderTitle_Click);
             // 
             // laOlderValue
             // 
@@ -422,6 +423,7 @@ namespace 草堂街道社会智能数据管理系统
             this.laAloneOlderTitle.TabIndex = 28;
             this.laAloneOlderTitle.Tag = "m3";
             this.laAloneOlderTitle.Text = "空巢老人：";
+            this.laAloneOlderTitle.Click += new System.EventHandler(this.laAloneOlderTitle_Click);
             // 
             // laAloneOlderValue
             // 
@@ -458,6 +460,7 @@ namespace 草堂街道社会智能数据管理系统
             this.laMentalTitle.TabIndex = 31;
             this.laMentalTitle.Tag = "m5";
             this.laMentalTitle.Text = "精神残疾：";
+            this.laMentalTitle.Click += new System.EventHandler(this.laMentalTitle_Click);
             // 
             // laHandicappedValue
             // 
@@ -490,7 +493,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laPriorityTitle.Name = "laPriorityTitle";
             this.laPriorityTitle.Size = new System.Drawing.Size(107, 25);
             this.laPriorityTitle.TabIndex = 34;
+            this.laPriorityTitle.Tag = "m6";
             this.laPriorityTitle.Text = "优抚对象：";
+            this.laPriorityTitle.Click += new System.EventHandler(this.laPriorityTitle_Click);
             // 
             // laPriorityValue
             // 
@@ -512,7 +517,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laForeignerTitle.Name = "laForeignerTitle";
             this.laForeignerTitle.Size = new System.Drawing.Size(107, 25);
             this.laForeignerTitle.TabIndex = 36;
+            this.laForeignerTitle.Tag = "m7";
             this.laForeignerTitle.Text = "境外人员：";
+            this.laForeignerTitle.Click += new System.EventHandler(this.laForeignerTitle_Click);
             // 
             // laForeignerValue
             // 
@@ -534,7 +541,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laLowestFmailyTitle.Name = "laLowestFmailyTitle";
             this.laLowestFmailyTitle.Size = new System.Drawing.Size(107, 25);
             this.laLowestFmailyTitle.TabIndex = 38;
+            this.laLowestFmailyTitle.Tag = "m8";
             this.laLowestFmailyTitle.Text = "低保户数：";
+            this.laLowestFmailyTitle.Click += new System.EventHandler(this.laLowestFmailyTitle_Click);
             // 
             // laLowestFmailyValue
             // 
@@ -556,7 +565,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laLowestPeopleTitle.Name = "laLowestPeopleTitle";
             this.laLowestPeopleTitle.Size = new System.Drawing.Size(107, 25);
             this.laLowestPeopleTitle.TabIndex = 40;
+            this.laLowestPeopleTitle.Tag = "m9";
             this.laLowestPeopleTitle.Text = "低保人员：";
+            this.laLowestPeopleTitle.Click += new System.EventHandler(this.laLowestPeopleTitle_Click);
             // 
             // laLowestPeopleValue
             // 
@@ -578,7 +589,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laCleanerTitle.Name = "laCleanerTitle";
             this.laCleanerTitle.Size = new System.Drawing.Size(107, 25);
             this.laCleanerTitle.TabIndex = 42;
+            this.laCleanerTitle.Tag = "m10";
             this.laCleanerTitle.Text = "保洁人员：";
+            this.laCleanerTitle.Click += new System.EventHandler(this.laCleanerTitle_Click);
             // 
             // laCleanerValue
             // 
@@ -600,7 +613,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laEmphasisTitle.Name = "laEmphasisTitle";
             this.laEmphasisTitle.Size = new System.Drawing.Size(107, 25);
             this.laEmphasisTitle.TabIndex = 44;
+            this.laEmphasisTitle.Tag = "m11";
             this.laEmphasisTitle.Text = "重点人员：";
+            this.laEmphasisTitle.Click += new System.EventHandler(this.laEmphasisTitle_Click);
             // 
             // laEmphasisValue
             // 
@@ -622,7 +637,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laUnemploymentTitle.Name = "laUnemploymentTitle";
             this.laUnemploymentTitle.Size = new System.Drawing.Size(107, 25);
             this.laUnemploymentTitle.TabIndex = 46;
+            this.laUnemploymentTitle.Tag = "m12";
             this.laUnemploymentTitle.Text = "失业人员：";
+            this.laUnemploymentTitle.Click += new System.EventHandler(this.laUnemploymentTitle_Click);
             // 
             // laUnemploymentValue
             // 
@@ -644,7 +661,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laDopeTitle.Name = "laDopeTitle";
             this.laDopeTitle.Size = new System.Drawing.Size(107, 25);
             this.laDopeTitle.TabIndex = 48;
+            this.laDopeTitle.Tag = "m13";
             this.laDopeTitle.Text = "吸毒人员：";
+            this.laDopeTitle.Click += new System.EventHandler(this.laDopeTitle_Click);
             // 
             // laDopeValue
             // 
@@ -666,7 +685,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laCorrectTitle.Name = "laCorrectTitle";
             this.laCorrectTitle.Size = new System.Drawing.Size(107, 25);
             this.laCorrectTitle.TabIndex = 50;
+            this.laCorrectTitle.Tag = "m14";
             this.laCorrectTitle.Text = "矫正人员：";
+            this.laCorrectTitle.Click += new System.EventHandler(this.laCorrectTitle_Click);
             // 
             // laCorrectValue
             // 
@@ -688,7 +709,9 @@ namespace 草堂街道社会智能数据管理系统
             this.laReleaseTitle.Name = "laReleaseTitle";
             this.laReleaseTitle.Size = new System.Drawing.Size(107, 25);
             this.laReleaseTitle.TabIndex = 52;
+            this.laReleaseTitle.Tag = "m15";
             this.laReleaseTitle.Text = "刑释人员：";
+            this.laReleaseTitle.Click += new System.EventHandler(this.laReleaseTitle_Click);
             // 
             // laReleaseValue
             // 

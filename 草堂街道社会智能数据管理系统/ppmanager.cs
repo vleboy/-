@@ -49,7 +49,7 @@ namespace 草堂街道社会智能数据管理系统
             + "CASE features.old_alone when true then '是' ELSE '否'end AS olda,"
             + "CASE features.poor when true then '是' ELSE '否'end AS poor,"
             + "CASE features.handicapped when true then '是' ELSE '否'end AS hand,"
-            + "CASE features.resident when true then '是' ELSE '否'end AS res,"
+            + "CASE features.resident when resident then '是' ELSE '否'end AS res,"
             + "CASE features.unjob when true then '是' ELSE '否'end AS unjob,"
             + "CASE features.dope when true then '是' ELSE '否'end AS dope,"
             + "CASE features.correction when true then '是' ELSE '否'end AS cor,"
@@ -89,12 +89,81 @@ namespace 草堂街道社会智能数据管理系统
             {
                 switch (this.Tag.ToString())
                 {
-                    case "m4":
+                    case "m1":
                         {
                             sqlcmd += "WHERE population.educational = '党员'" ;
                         }
                         break;
-                    
+                    case "m2":
+                        {
+                            sqlcmd += "WHERE features.old IS NOT NULL";
+                        }
+                        break;
+                    case "m3":
+                        {
+                            sqlcmd += "WHERE features.old >= 1 AND features.old_alone >= 1 ";
+                        }
+                        break;
+                    case "m4":
+                        {
+                            sqlcmd += "WHERE features.handicapped >= 1";
+                        }
+                        break;
+                    case "m5":
+                        {
+                            sqlcmd += "WHERE features.handicapped >= 1";
+                        }
+                        break;
+                    case "m6":
+                        {
+                            sqlcmd += "WHERE features.poor >= 1";
+                        }
+                        break;
+                    case "m7":
+                        {
+                            sqlcmd += "WHERE features.foreigner >= 1";
+                        }
+                        break;
+                    case "m8":
+                        {
+                            sqlcmd += "WHERE features.poor >= 1";
+                        }
+                        break;
+                    case "m9":
+                        {
+                            sqlcmd += "WHERE features.poor >= 1";
+                        }
+                        break;
+                    case "m10":
+                        {
+                            sqlcmd += "WHERE features.cleaner >= 1 ";
+                        }
+                        break;
+                    case "m11":
+                        {
+                            sqlcmd += "WHERE features.vip >= 1";
+                        }
+                        break;
+                    case "m12":
+                        {
+                            sqlcmd += "WHERE features.unjob >= 1";
+                        }
+                        break;
+                    case "m13":
+                        {
+                            sqlcmd += "WHERE features.dope >= 1";
+                        }
+                        break;
+                    case "m14":
+                        {
+                            sqlcmd += "WHERE features.correction >= 1";
+                        }
+                        break;
+                    case "m15":
+                        {
+                            sqlcmd += "WHERE features.released >= 1";
+                        }
+                        break;
                     default:
                         break;
                 }

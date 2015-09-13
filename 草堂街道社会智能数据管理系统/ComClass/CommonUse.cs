@@ -183,15 +183,31 @@ namespace 草堂街道社会智能数据管理系统.ComClass
                     Fll.WindowState = FormWindowState.Maximized;
                     Fll.Show();
                     break;
+                case "m1"://党员
+                case "m2"://党员
+                case "m3"://党员
                 case "m4"://党员
+                case "m5"://党员
+                case "m6"://党员
+                case "m7"://党员
+                case "m8"://党员
+                case "m9"://党员
+                case "m10"://党员
+                case "m11"://党员
+                case "m12"://党员
+                case "m13"://党员
+                case "m14"://党员
+                case "m15"://党员
+                    ppmanager m1 = new ppmanager();
 
-                    ppmanager m4= new ppmanager();
-                    m4.MdiParent = form;
-                    m4.StartPosition = FormStartPosition.CenterScreen;
-                    m4.Tag = la.Tag.ToString();
-                    m4.WindowState = FormWindowState.Maximized;
-                    m4.Show();
-                    break;
+                    m1.MdiParent = form;
+                    m1.StartPosition = FormStartPosition.CenterScreen;
+                    m1.Tag = la.Tag.ToString();
+                    m1.WindowState = FormWindowState.Maximized;
+                    m1.Show();
+                break;
+
+
             }
         }
 

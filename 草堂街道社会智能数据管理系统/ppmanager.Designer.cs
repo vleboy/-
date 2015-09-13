@@ -33,6 +33,7 @@ namespace 草堂街道社会智能数据管理系统
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
             this.checkBox14 = new System.Windows.Forms.CheckBox();
             this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.checkBox12 = new System.Windows.Forms.CheckBox();
@@ -61,13 +62,10 @@ namespace 草堂街道社会智能数据管理系统
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.添加人员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cardid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.district = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cardid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.block = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.member = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,6 +81,8 @@ namespace 草堂街道社会智能数据管理系统
             this.released = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.poor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dope = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.添加人员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
@@ -91,6 +91,9 @@ namespace 草堂街道社会智能数据管理系统
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.checkBox15);
             this.groupBox1.Controls.Add(this.checkBox14);
             this.groupBox1.Controls.Add(this.checkBox13);
@@ -124,6 +127,16 @@ namespace 草堂街道社会智能数据管理系统
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "人员管理";
+            // 
+            // checkBox15
+            // 
+            this.checkBox15.AutoSize = true;
+            this.checkBox15.Location = new System.Drawing.Point(698, 87);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.Size = new System.Drawing.Size(48, 16);
+            this.checkBox15.TabIndex = 26;
+            this.checkBox15.Text = "党员";
+            this.checkBox15.UseVisualStyleBackColor = true;
             // 
             // checkBox14
             // 
@@ -372,24 +385,31 @@ namespace 草堂街道社会智能数据管理系统
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.dgv);
             this.groupBox2.Location = new System.Drawing.Point(12, 175);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(984, 542);
+            this.groupBox2.Size = new System.Drawing.Size(984, 523);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
             // dgv
             // 
+            this.dgv.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.name,
-            this.cardid,
             this.district,
             this.grid,
+            this.cardid,
             this.block,
             this.ad,
             this.member,
@@ -405,25 +425,198 @@ namespace 草堂街道社会智能数据管理系统
             this.released,
             this.poor,
             this.dope});
-            this.dgv.Dock = System.Windows.Forms.DockStyle.Left;
             this.dgv.Location = new System.Drawing.Point(3, 17);
             this.dgv.MultiSelect = false;
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
-            this.dgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgv.RowHeadersVisible = false;
             this.dgv.RowTemplate.Height = 23;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(978, 522);
+            this.dgv.Size = new System.Drawing.Size(978, 503);
             this.dgv.TabIndex = 0;
+            // 
+            // name
+            // 
+            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.name.DataPropertyName = "na";
+            this.name.HeaderText = "姓名";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 54;
+            // 
+            // district
+            // 
+            this.district.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.district.DataPropertyName = "nd";
+            this.district.HeaderText = "所属社区";
+            this.district.Name = "district";
+            this.district.ReadOnly = true;
+            this.district.Width = 78;
+            // 
+            // grid
+            // 
+            this.grid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.grid.DataPropertyName = "ng";
+            this.grid.HeaderText = "所属网格";
+            this.grid.Name = "grid";
+            this.grid.ReadOnly = true;
+            this.grid.Width = 78;
+            // 
+            // cardid
+            // 
+            this.cardid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.cardid.DataPropertyName = "cid";
+            this.cardid.HeaderText = "身份证";
+            this.cardid.Name = "cardid";
+            this.cardid.ReadOnly = true;
+            this.cardid.Width = 66;
+            // 
+            // block
+            // 
+            this.block.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.block.DataPropertyName = "nb";
+            this.block.HeaderText = "所属院落";
+            this.block.Name = "block";
+            this.block.ReadOnly = true;
+            this.block.Width = 78;
+            // 
+            // ad
+            // 
+            this.ad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ad.DataPropertyName = "ad";
+            this.ad.HeaderText = "居住地址";
+            this.ad.Name = "ad";
+            this.ad.ReadOnly = true;
+            this.ad.Width = 78;
+            // 
+            // member
+            // 
+            this.member.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.member.DataPropertyName = "edu";
+            this.member.HeaderText = "党员";
+            this.member.Name = "member";
+            this.member.ReadOnly = true;
+            this.member.Width = 54;
+            // 
+            // resident
+            // 
+            this.resident.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.resident.DataPropertyName = "res";
+            this.resident.HeaderText = "常住人员";
+            this.resident.Name = "resident";
+            this.resident.ReadOnly = true;
+            this.resident.Width = 78;
+            // 
+            // handicapped
+            // 
+            this.handicapped.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.handicapped.DataPropertyName = "hand";
+            this.handicapped.HeaderText = "残疾人";
+            this.handicapped.Name = "handicapped";
+            this.handicapped.ReadOnly = true;
+            this.handicapped.Width = 66;
+            // 
+            // old
+            // 
+            this.old.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.old.DataPropertyName = "old";
+            this.old.HeaderText = "老年人";
+            this.old.Name = "old";
+            this.old.ReadOnly = true;
+            this.old.Width = 66;
+            // 
+            // alone
+            // 
+            this.alone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.alone.DataPropertyName = "olda";
+            this.alone.HeaderText = "空巢老人";
+            this.alone.Name = "alone";
+            this.alone.ReadOnly = true;
+            this.alone.Width = 78;
+            // 
+            // jwry
+            // 
+            this.jwry.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.jwry.DataPropertyName = "fore";
+            this.jwry.HeaderText = "境外人员";
+            this.jwry.Name = "jwry";
+            this.jwry.ReadOnly = true;
+            this.jwry.Width = 78;
+            // 
+            // syry
+            // 
+            this.syry.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.syry.DataPropertyName = "unjob";
+            this.syry.HeaderText = "失业人员";
+            this.syry.Name = "syry";
+            this.syry.ReadOnly = true;
+            this.syry.Width = 78;
+            // 
+            // vip
+            // 
+            this.vip.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.vip.DataPropertyName = "vip";
+            this.vip.HeaderText = "重要人员";
+            this.vip.Name = "vip";
+            this.vip.ReadOnly = true;
+            this.vip.Width = 78;
+            // 
+            // clear
+            // 
+            this.clear.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.clear.DataPropertyName = "cle";
+            this.clear.HeaderText = "清洁人员 ";
+            this.clear.Name = "clear";
+            this.clear.ReadOnly = true;
+            this.clear.Width = 78;
+            // 
+            // correction
+            // 
+            this.correction.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.correction.DataPropertyName = "cor";
+            this.correction.HeaderText = "矫正人员";
+            this.correction.Name = "correction";
+            this.correction.ReadOnly = true;
+            this.correction.Width = 78;
+            // 
+            // released
+            // 
+            this.released.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.released.DataPropertyName = "rel";
+            this.released.HeaderText = "刑满人员";
+            this.released.Name = "released";
+            this.released.ReadOnly = true;
+            this.released.Width = 78;
+            // 
+            // poor
+            // 
+            this.poor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.poor.DataPropertyName = "poor";
+            this.poor.HeaderText = "低保人员";
+            this.poor.Name = "poor";
+            this.poor.ReadOnly = true;
+            this.poor.Width = 78;
+            // 
+            // dope
+            // 
+            this.dope.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dope.DataPropertyName = "dope";
+            this.dope.HeaderText = "吸毒人员";
+            this.dope.Name = "dope";
+            this.dope.ReadOnly = true;
+            this.dope.Width = 78;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.添加人员ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1008, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(76, 25);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -435,161 +628,11 @@ namespace 草堂街道社会智能数据管理系统
             this.添加人员ToolStripMenuItem.Text = "添加人员";
             this.添加人员ToolStripMenuItem.Click += new System.EventHandler(this.添加人员ToolStripMenuItem_Click);
             // 
-            // checkBox15
-            // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(698, 87);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(48, 16);
-            this.checkBox15.TabIndex = 26;
-            this.checkBox15.Text = "党员";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "na";
-            this.name.HeaderText = "姓名";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            // 
-            // cardid
-            // 
-            this.cardid.DataPropertyName = "cid";
-            this.cardid.HeaderText = "身份证";
-            this.cardid.Name = "cardid";
-            this.cardid.ReadOnly = true;
-            // 
-            // district
-            // 
-            this.district.DataPropertyName = "nd";
-            this.district.HeaderText = "所属社区";
-            this.district.Name = "district";
-            this.district.ReadOnly = true;
-            // 
-            // grid
-            // 
-            this.grid.DataPropertyName = "ng";
-            this.grid.HeaderText = "所属网格";
-            this.grid.Name = "grid";
-            this.grid.ReadOnly = true;
-            // 
-            // block
-            // 
-            this.block.DataPropertyName = "nb";
-            this.block.HeaderText = "所属院落";
-            this.block.Name = "block";
-            this.block.ReadOnly = true;
-            // 
-            // ad
-            // 
-            this.ad.DataPropertyName = "ad";
-            this.ad.HeaderText = "居住地址";
-            this.ad.Name = "ad";
-            this.ad.ReadOnly = true;
-            // 
-            // member
-            // 
-            this.member.DataPropertyName = "edu";
-            this.member.HeaderText = "党员";
-            this.member.Name = "member";
-            this.member.ReadOnly = true;
-            // 
-            // resident
-            // 
-            this.resident.DataPropertyName = "res";
-            this.resident.HeaderText = "常住人员";
-            this.resident.Name = "resident";
-            this.resident.ReadOnly = true;
-            this.resident.Visible = false;
-            // 
-            // handicapped
-            // 
-            this.handicapped.DataPropertyName = "hand";
-            this.handicapped.HeaderText = "残疾人";
-            this.handicapped.Name = "handicapped";
-            this.handicapped.ReadOnly = true;
-            this.handicapped.Visible = false;
-            // 
-            // old
-            // 
-            this.old.DataPropertyName = "old";
-            this.old.HeaderText = "老年人";
-            this.old.Name = "old";
-            this.old.ReadOnly = true;
-            this.old.Visible = false;
-            // 
-            // alone
-            // 
-            this.alone.DataPropertyName = "olda";
-            this.alone.HeaderText = "空巢老人";
-            this.alone.Name = "alone";
-            this.alone.ReadOnly = true;
-            // 
-            // jwry
-            // 
-            this.jwry.DataPropertyName = "fore";
-            this.jwry.HeaderText = "境外人员";
-            this.jwry.Name = "jwry";
-            this.jwry.ReadOnly = true;
-            // 
-            // syry
-            // 
-            this.syry.DataPropertyName = "unjob";
-            this.syry.HeaderText = "失业人员";
-            this.syry.Name = "syry";
-            this.syry.ReadOnly = true;
-            // 
-            // vip
-            // 
-            this.vip.DataPropertyName = "vip";
-            this.vip.HeaderText = "重要人员";
-            this.vip.Name = "vip";
-            this.vip.ReadOnly = true;
-            // 
-            // clear
-            // 
-            this.clear.DataPropertyName = "cle";
-            this.clear.HeaderText = "清洁人员 ";
-            this.clear.Name = "clear";
-            this.clear.ReadOnly = true;
-            // 
-            // correction
-            // 
-            this.correction.DataPropertyName = "cor";
-            this.correction.HeaderText = "矫正人员";
-            this.correction.Name = "correction";
-            this.correction.ReadOnly = true;
-            this.correction.Visible = false;
-            // 
-            // released
-            // 
-            this.released.DataPropertyName = "rel";
-            this.released.HeaderText = "刑满人员";
-            this.released.Name = "released";
-            this.released.ReadOnly = true;
-            this.released.Visible = false;
-            // 
-            // poor
-            // 
-            this.poor.DataPropertyName = "poor";
-            this.poor.HeaderText = "低保人员";
-            this.poor.Name = "poor";
-            this.poor.ReadOnly = true;
-            this.poor.Visible = false;
-            // 
-            // dope
-            // 
-            this.dope.DataPropertyName = "dope";
-            this.dope.HeaderText = "吸毒人员";
-            this.dope.Name = "dope";
-            this.dope.ReadOnly = true;
-            this.dope.Visible = false;
-            // 
             // ppmanager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1008, 707);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
@@ -642,9 +685,9 @@ namespace 草堂街道社会智能数据管理系统
         private CheckBox checkBox12;
         private CheckBox checkBox15;
         private DataGridViewTextBoxColumn name;
-        private DataGridViewTextBoxColumn cardid;
         private DataGridViewTextBoxColumn district;
         private DataGridViewTextBoxColumn grid;
+        private DataGridViewTextBoxColumn cardid;
         private DataGridViewTextBoxColumn block;
         private DataGridViewTextBoxColumn ad;
         private DataGridViewTextBoxColumn member;
