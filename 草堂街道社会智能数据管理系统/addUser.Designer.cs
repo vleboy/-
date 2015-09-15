@@ -31,6 +31,7 @@ namespace 草堂街道社会智能数据管理系统
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addUser));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -543,6 +544,7 @@ namespace 草堂街道社会智能数据管理系统
             this.cb_zk.TabIndex = 27;
             this.cb_zk.Text = "租客";
             this.cb_zk.UseVisualStyleBackColor = true;
+            this.cb_zk.Visible = false;
             // 
             // la_qfrq
             // 
@@ -1575,6 +1577,7 @@ namespace 草堂街道社会智能数据管理系统
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "addUser";

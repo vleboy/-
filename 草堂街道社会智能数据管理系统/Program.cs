@@ -16,7 +16,7 @@ namespace 草堂街道社会智能数据管理系统
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Run(new Main());
-            Application.Run(new Main());
+            Application.Run(new Login());
         }
     }
 }

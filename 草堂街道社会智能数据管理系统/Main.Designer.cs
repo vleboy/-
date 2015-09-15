@@ -62,7 +62,7 @@
             // 列表模式ToolStripMenuItem
             // 
             this.列表模式ToolStripMenuItem.Name = "列表模式ToolStripMenuItem";
-            this.列表模式ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.列表模式ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.列表模式ToolStripMenuItem.Tag = "list";
             this.列表模式ToolStripMenuItem.Text = "列表模式";
             this.列表模式ToolStripMenuItem.Click += new System.EventHandler(this.列表模式ToolStripMenuItem_Click);
@@ -70,9 +70,10 @@
             // 地图模式ToolStripMenuItem
             // 
             this.地图模式ToolStripMenuItem.Name = "地图模式ToolStripMenuItem";
-            this.地图模式ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.地图模式ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.地图模式ToolStripMenuItem.Tag = "map";
             this.地图模式ToolStripMenuItem.Text = "地图模式";
+            this.地图模式ToolStripMenuItem.Click += new System.EventHandler(this.地图模式ToolStripMenuItem_Click);
             // 
             // 人员管理ToolStripMenuItem
             // 
@@ -111,6 +112,7 @@
             this.Controls.Add(this.laUser);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);

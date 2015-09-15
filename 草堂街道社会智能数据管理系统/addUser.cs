@@ -364,8 +364,9 @@ namespace 草堂街道社会智能数据管理系统
                 strcmd = " INSERT INTO `phone` (`phonenumber`, `population`) VALUES('" + ryxx_p3.Text.Trim() + "', '" + sid + "')" + "; select @@identity AS id";
                 db.GetSingleObject(strcmd).ToString();
             }
-
+            MessageBox.Show("添加成功", "软件提示"); 
             feature = 0;
+            this.Close();
         }
 
       

@@ -107,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::草堂街道社会智能数据管理系统.Properties.Resources.back_1_;
             this.ClientSize = new System.Drawing.Size(911, 565);
             this.Controls.Add(this.laPassword);
             this.Controls.Add(this.laUser);
@@ -115,6 +115,7 @@
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnLogin);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

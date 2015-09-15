@@ -43,5 +43,13 @@ namespace 草堂街道社会智能数据管理系统
 
             commUse.ShowForm(x.Tag.ToString(), this);
         }
+
+        private void 地图模式ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             CommonUse commUse = new CommonUse();
+            var x = (ToolStripMenuItem)sender;
+
+            commUse.ShowForm(x.Tag.ToString(), this);
+        }
     }
 }

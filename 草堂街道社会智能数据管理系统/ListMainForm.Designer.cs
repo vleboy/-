@@ -166,7 +166,7 @@ namespace 草堂街道社会智能数据管理系统
             this.laSXQ.Name = "laSXQ";
             this.laSXQ.Size = new System.Drawing.Size(107, 25);
             this.laSXQ.TabIndex = 6;
-            this.laSXQ.Tag = "0";
+            this.laSXQ.Tag = "4";
             this.laSXQ.Text = "送仙桥社区";
             this.laSXQ.Click += new System.EventHandler(this.laSXQ_Click);
             // 
@@ -273,7 +273,7 @@ namespace 草堂街道社会智能数据管理系统
             this.laHouseValue.Name = "laHouseValue";
             this.laHouseValue.Size = new System.Drawing.Size(45, 25);
             this.laHouseValue.TabIndex = 15;
-            this.laHouseValue.Text = "000";
+            this.laHouseValue.Text = "620";
             // 
             // laUnitTitle
             // 
@@ -295,7 +295,7 @@ namespace 草堂街道社会智能数据管理系统
             this.laUnitValue.Name = "laUnitValue";
             this.laUnitValue.Size = new System.Drawing.Size(56, 25);
             this.laUnitValue.TabIndex = 17;
-            this.laUnitValue.Text = "0000";
+            this.laUnitValue.Text = "1554";
             // 
             // laCommunityPopulationTitle
             // 
@@ -798,6 +798,7 @@ namespace 草堂街道社会智能数据管理系统
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.gbListMain);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ListMainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
